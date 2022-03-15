@@ -567,6 +567,25 @@ namespace overFlood
         {
             try
             {
+                string fileContent = string.Empty;
+                string fileName = string.Empty;
+                using (OpenFileDialog openFileDialog = new OpenFileDialog())
+                {
+                    openFileDialog.InitialDirectory = Application.StartupPath;
+                    openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                    openFileDialog.FilterIndex = 2;
+                    openFileDialog.RestoreDirectory = true;
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        fileName = openFileDialog.FileName;
+                        var fileStream = openFileDialog.OpenFile();
+                        using (StreamReader sr = new StreamReader(fileStream))
+                        {
+                            fileContent = sr.ReadToEnd();
+                        }
+                    }
+                }
+                MessageBox.Show($"Loaded proxies", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //string fileName = Utilities.OpenFileDialog("Load Proxies");
                 //if (string.IsNullOrEmpty(fileName)) return;
                 //accountCheckerProxies = Utilities.LoadFile(fileName);
