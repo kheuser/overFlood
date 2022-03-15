@@ -1,0 +1,7 @@
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.MainForm.resources
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.csproj.GenerateResource.cache
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.AssemblyInfoInputs.cache
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.AssemblyInfo.cs
+C:\Users\Kevin\source\repos\overFlood2\overFlood\overFlood\obj\Debug\net48-windows\overFlood.csproj.CoreCompileInputs.cache

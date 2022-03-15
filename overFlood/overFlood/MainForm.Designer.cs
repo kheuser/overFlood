@@ -29,227 +29,227 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tabControl = new XylosTabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.comboScraperSSL = new XylosCombobox();
+            this.comboScraperSSL = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
-            this.btnScraperCopyToClipboard = new XylosButton();
+            this.btnScraperCopyToClipboard = new System.Windows.Forms.Button();
             this.lblScraperUpdated = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.txtScraperTimeout = new XylosTextBox();
-            this.btnScraperSave = new XylosButton();
+            this.txtScraperTimeout = new System.Windows.Forms.TextBox();
+            this.btnScraperSave = new System.Windows.Forms.Button();
             this.lblProxiesFetched = new System.Windows.Forms.Label();
-            this.btnScraperFetch = new XylosButton();
+            this.btnScraperFetch = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboScraperAnonymity = new XylosCombobox();
+            this.comboScraperAnonymity = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.comboScraperCountry = new XylosCombobox();
+            this.comboScraperCountry = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.comboScraperType = new XylosCombobox();
+            this.comboScraperType = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblCreatorRetries = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.txtCreatorTimeout = new XylosTextBox();
+            this.txtCreatorTimeout = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.btnCreatorStop = new XylosButton();
-            this.btnCreatorStart = new XylosButton();
-            this.txtCreatorAmount = new XylosTextBox();
+            this.btnCreatorStop = new System.Windows.Forms.Button();
+            this.btnCreatorStart = new System.Windows.Forms.Button();
+            this.txtCreatorAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCreatorLoadProxies = new XylosButton();
+            this.btnCreatorLoadProxies = new System.Windows.Forms.Button();
             this.lblCreatorProxies = new System.Windows.Forms.Label();
-            this.txtCreatorThreads = new XylosTextBox();
+            this.txtCreatorThreads = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboCreatorProxyType = new XylosCombobox();
+            this.comboCreatorProxyType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblAccountsCreated = new System.Windows.Forms.Label();
-            this.txtCreator2CaptchaKey = new XylosTextBox();
+            this.txtCreator2CaptchaKey = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.lblLegacyChecked = new System.Windows.Forms.Label();
             this.lblLegacyHits = new System.Windows.Forms.Label();
-            this.btnLegacyStop = new XylosButton();
-            this.btnLegacyStart = new XylosButton();
+            this.btnLegacyStop = new System.Windows.Forms.Button();
+            this.btnLegacyStart = new System.Windows.Forms.Button();
             this.lblLegacyAccounts = new System.Windows.Forms.Label();
-            this.btnLegacyLoadAccounts = new XylosButton();
-            this.txtLegacyThreads = new XylosTextBox();
+            this.btnLegacyLoadAccounts = new System.Windows.Forms.Button();
+            this.txtLegacyThreads = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.lblAccountCheckerRetries = new System.Windows.Forms.Label();
             this.lblAccountCheckerChecked = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.txtCheckerTimeout = new XylosTextBox();
+            this.txtCheckerTimeout = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.comboCheckerProxyType = new XylosCombobox();
+            this.comboCheckerProxyType = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.lblAccountCheckerBits = new System.Windows.Forms.Label();
             this.lblAccountCheckerPrimes = new System.Windows.Forms.Label();
             this.lblAccountCheckerPrimeAvailable = new System.Windows.Forms.Label();
             this.lblAccountCheckerInvalid = new System.Windows.Forms.Label();
             this.lblAccountCheckerGood = new System.Windows.Forms.Label();
-            this.btnAccountCheckerStop = new XylosButton();
-            this.btnAccountCheckerStart = new XylosButton();
+            this.btnAccountCheckerStop = new System.Windows.Forms.Button();
+            this.btnAccountCheckerStart = new System.Windows.Forms.Button();
             this.lblCheckerAccounts = new System.Windows.Forms.Label();
             this.lblAccountCheckerProxies = new System.Windows.Forms.Label();
-            this.btnAccountCheckerLoadProxies = new XylosButton();
-            this.btnAccountCheckerLoadAccounts = new XylosButton();
-            this.txtAccountCheckerThreads = new XylosTextBox();
+            this.btnAccountCheckerLoadProxies = new System.Windows.Forms.Button();
+            this.btnAccountCheckerLoadAccounts = new System.Windows.Forms.Button();
+            this.txtAccountCheckerThreads = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lblTokenCheckerChecked = new System.Windows.Forms.Label();
-            this.txtTokenCheckerThreads = new XylosTextBox();
+            this.txtTokenCheckerThreads = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTokenCheckerTokens = new System.Windows.Forms.Label();
-            this.btnTokenCheckerLoadTokens = new XylosButton();
-            this.btnTokenCheckerStop = new XylosButton();
+            this.btnTokenCheckerLoadTokens = new System.Windows.Forms.Button();
+            this.btnTokenCheckerStop = new System.Windows.Forms.Button();
             this.lblTokenCheckerBits = new System.Windows.Forms.Label();
             this.lblTokenCheckerPrimes = new System.Windows.Forms.Label();
             this.lblTokenCheckerPrimeAvailable = new System.Windows.Forms.Label();
             this.lblTokenCheckerBad = new System.Windows.Forms.Label();
             this.lblTokenCheckerGood = new System.Windows.Forms.Label();
-            this.btnTokenCheckerStart = new XylosButton();
+            this.btnTokenCheckerStart = new System.Windows.Forms.Button();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.lblViewRequestsFailed = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.txtViewTimeout = new XylosTextBox();
+            this.txtViewTimeout = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.lblViewRequests = new System.Windows.Forms.Label();
-            this.btnViewStop = new XylosButton();
-            this.btnViewStart = new XylosButton();
-            this.comboViewProxyType = new XylosCombobox();
+            this.btnViewStop = new System.Windows.Forms.Button();
+            this.btnViewStart = new System.Windows.Forms.Button();
+            this.comboViewProxyType = new System.Windows.Forms.CheckBox();
             this.label38 = new System.Windows.Forms.Label();
             this.lblViewBotProxies = new System.Windows.Forms.Label();
-            this.btnViewLoadProxies = new XylosButton();
-            this.txtViewThreads = new XylosTextBox();
+            this.btnViewLoadProxies = new System.Windows.Forms.Button();
+            this.txtViewThreads = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.txtViewChannel = new XylosTextBox();
+            this.txtViewChannel = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label61 = new System.Windows.Forms.Label();
             this.lblChannelFailedRequests = new System.Windows.Forms.Label();
-            this.txtChannelTimeout = new XylosTextBox();
+            this.txtChannelTimeout = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.lblChannelRequests = new System.Windows.Forms.Label();
-            this.btnChannelStop = new XylosButton();
-            this.btnChannelStart = new XylosButton();
-            this.comboChannelType = new XylosCombobox();
+            this.btnChannelStop = new System.Windows.Forms.Button();
+            this.btnChannelStart = new System.Windows.Forms.Button();
+            this.comboChannelType = new System.Windows.Forms.CheckBox();
             this.label55 = new System.Windows.Forms.Label();
             this.lblChannelProxies = new System.Windows.Forms.Label();
-            this.btnChannelLoadProxies = new XylosButton();
-            this.txtChannelThreads = new XylosTextBox();
+            this.btnChannelLoadProxies = new System.Windows.Forms.Button();
+            this.txtChannelThreads = new System.Windows.Forms.TextBox();
             this.label57 = new System.Windows.Forms.Label();
-            this.txtChannel = new XylosTextBox();
+            this.txtChannel = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.label67 = new System.Windows.Forms.Label();
             this.lblVODRequestsFailed = new System.Windows.Forms.Label();
-            this.txtVODTimeout = new XylosTextBox();
+            this.txtVODTimeout = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.lblVODRequests = new System.Windows.Forms.Label();
-            this.btnVODStop = new XylosButton();
-            this.btnVODStart = new XylosButton();
-            this.comboVODType = new XylosCombobox();
+            this.btnVODStop = new System.Windows.Forms.Button();
+            this.btnVODStart = new System.Windows.Forms.Button();
+            this.comboVODType = new System.Windows.Forms.CheckBox();
             this.label63 = new System.Windows.Forms.Label();
             this.lblVODProxies = new System.Windows.Forms.Label();
-            this.btnVODLoadProxies = new XylosButton();
-            this.txtVODThreads = new XylosTextBox();
+            this.btnVODLoadProxies = new System.Windows.Forms.Button();
+            this.txtVODThreads = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.txtVODID = new XylosTextBox();
+            this.txtVODID = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblFollowRemoved = new System.Windows.Forms.Label();
-            this.radioUnfollow = new XylosRadioButton();
-            this.radioFollow = new XylosRadioButton();
+            this.radioUnfollow = new System.Windows.Forms.RadioButton();
+            this.radioFollow = new System.Windows.Forms.RadioButton();
             this.label50 = new System.Windows.Forms.Label();
-            this.txtFollowTimeout = new XylosTextBox();
+            this.txtFollowTimeout = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.chkFollowUseProxies = new XylosCheckBox();
-            this.comboFollowProxyType = new XylosCombobox();
+            this.chkFollowUseProxies = new System.Windows.Forms.CheckBox();
+            this.comboFollowProxyType = new System.Windows.Forms.CheckBox();
             this.label52 = new System.Windows.Forms.Label();
             this.lblFollowProxies = new System.Windows.Forms.Label();
-            this.btnFollowLoadProxies = new XylosButton();
+            this.btnFollowLoadProxies = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.txtFollowDelay = new XylosTextBox();
+            this.txtFollowDelay = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.lblFollowTokens = new System.Windows.Forms.Label();
-            this.btnFollowLoadTokens = new XylosButton();
-            this.txtFollowThreads = new XylosTextBox();
+            this.btnFollowLoadTokens = new System.Windows.Forms.Button();
+            this.txtFollowThreads = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtFollowChannel = new XylosTextBox();
+            this.txtFollowChannel = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnFollowStop = new XylosButton();
+            this.btnFollowStop = new System.Windows.Forms.Button();
             this.lblFollowFail = new System.Windows.Forms.Label();
             this.lblFollowSent = new System.Windows.Forms.Label();
-            this.btnFollowStart = new XylosButton();
-            this.txtFollowAmount = new XylosTextBox();
+            this.btnFollowStart = new System.Windows.Forms.Button();
+            this.txtFollowAmount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblMessagesFail = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.txtChatTimeout = new XylosTextBox();
+            this.txtChatTimeout = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.chkChatUseProxies = new XylosCheckBox();
-            this.comboChatProxyType = new XylosCombobox();
+            this.chkChatUseProxies = new System.Windows.Forms.CheckBox();
+            this.comboChatProxyType = new System.Windows.Forms.CheckBox();
             this.label30 = new System.Windows.Forms.Label();
             this.lblChatProxies = new System.Windows.Forms.Label();
-            this.btnChatLoadProxies = new XylosButton();
+            this.btnChatLoadProxies = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtChatDelay = new XylosTextBox();
+            this.txtChatDelay = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lblChatTokens = new System.Windows.Forms.Label();
-            this.btnChatLoadTokens = new XylosButton();
-            this.txtChatBots = new XylosTextBox();
+            this.btnChatLoadTokens = new System.Windows.Forms.Button();
+            this.txtChatBots = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtChatChannel = new XylosTextBox();
+            this.txtChatChannel = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnChatStop = new XylosButton();
+            this.btnChatStop = new System.Windows.Forms.Button();
             this.lblSuccess = new System.Windows.Forms.Label();
-            this.btnChatStart = new XylosButton();
+            this.btnChatStart = new System.Windows.Forms.Button();
             this.lblMessages = new System.Windows.Forms.Label();
-            this.btnLoadMessages = new XylosButton();
+            this.btnLoadMessages = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.label44 = new System.Windows.Forms.Label();
-            this.txtSubTimeout = new XylosTextBox();
+            this.txtSubTimeout = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.chkSubUseProxies = new XylosCheckBox();
-            this.comboSubProxyType = new XylosCombobox();
+            this.chkSubUseProxies = new System.Windows.Forms.CheckBox();
+            this.comboSubProxyType = new System.Windows.Forms.CheckBox();
             this.label46 = new System.Windows.Forms.Label();
             this.lblSubProxies = new System.Windows.Forms.Label();
-            this.btnSubLoadProxies = new XylosButton();
+            this.btnSubLoadProxies = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtSubDelay = new XylosTextBox();
+            this.txtSubDelay = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.lblSubTokens = new System.Windows.Forms.Label();
-            this.btnSubLoadTokens = new XylosButton();
-            this.txtSubBots = new XylosTextBox();
+            this.btnSubLoadTokens = new System.Windows.Forms.Button();
+            this.txtSubBots = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtSubChannel = new XylosTextBox();
+            this.txtSubChannel = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.btnSubStop = new XylosButton();
+            this.btnSubStop = new System.Windows.Forms.Button();
             this.lblSubFail = new System.Windows.Forms.Label();
             this.lblSubSuccess = new System.Windows.Forms.Label();
-            this.btnSubStart = new XylosButton();
+            this.btnSubStart = new System.Windows.Forms.Button();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.label47 = new System.Windows.Forms.Label();
-            this.txtBitTimeout = new XylosTextBox();
+            this.txtBitTimeout = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.chkBitUseProxies = new XylosCheckBox();
-            this.comboBitProxyType = new XylosCombobox();
+            this.chkBitUseProxies = new System.Windows.Forms.CheckBox();
+            this.comboBitProxyType = new System.Windows.Forms.CheckBox();
             this.label49 = new System.Windows.Forms.Label();
             this.lblBitProxies = new System.Windows.Forms.Label();
-            this.btnBitLoadProxies = new XylosButton();
+            this.btnBitLoadProxies = new System.Windows.Forms.Button();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtBitDelay = new XylosTextBox();
+            this.txtBitDelay = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.lblBitFail = new System.Windows.Forms.Label();
             this.lblBitSuccess = new System.Windows.Forms.Label();
-            this.btnBitStop = new XylosButton();
-            this.btnBitStart = new XylosButton();
+            this.btnBitStop = new System.Windows.Forms.Button();
+            this.btnBitStart = new System.Windows.Forms.Button();
             this.lblBitTokens = new System.Windows.Forms.Label();
-            this.btnBitLoadTokens = new XylosButton();
-            this.txtBitBots = new XylosTextBox();
+            this.btnBitLoadTokens = new System.Windows.Forms.Button();
+            this.txtBitBots = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.txtBitChannel = new XylosTextBox();
+            this.txtBitChannel = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -282,7 +282,7 @@
             this.tabControl.Controls.Add(this.tabPage6);
             this.tabControl.Controls.Add(this.tabPage9);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl.FirstHeaderBorder = false;
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.ItemSize = new System.Drawing.Size(40, 180);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Multiline = true;
@@ -316,6 +316,7 @@
             this.tabPage5.Location = new System.Drawing.Point(184, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabPage5.Size = new System.Drawing.Size(244, 492);
             this.tabPage5.TabIndex = 11;
             this.tabPage5.Text = "Proxy Scraper";
@@ -323,17 +324,12 @@
             // comboScraperSSL
             // 
             this.comboScraperSSL.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboScraperSSL.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboScraperSSL.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScraperSSL.EnabledCalc = true;
-            this.comboScraperSSL.FormattingEnabled = true;
-            this.comboScraperSSL.ItemHeight = 20;
+            this.comboScraperSSL.Location = new System.Drawing.Point(83, 104);
+            this.comboScraperSSL.Name = "comboScraperSSL";
             this.comboScraperSSL.Items.AddRange(new object[] {
             "All",
             "Yes",
             "No"});
-            this.comboScraperSSL.Location = new System.Drawing.Point(83, 104);
-            this.comboScraperSSL.Name = "comboScraperSSL";
             this.comboScraperSSL.Size = new System.Drawing.Size(130, 26);
             this.comboScraperSSL.TabIndex = 4;
             // 
@@ -348,13 +344,12 @@
             // 
             // btnScraperCopyToClipboard
             // 
-            this.btnScraperCopyToClipboard.EnabledCalc = true;
             this.btnScraperCopyToClipboard.Location = new System.Drawing.Point(83, 235);
             this.btnScraperCopyToClipboard.Name = "btnScraperCopyToClipboard";
             this.btnScraperCopyToClipboard.Size = new System.Drawing.Size(130, 23);
             this.btnScraperCopyToClipboard.TabIndex = 31;
             this.btnScraperCopyToClipboard.Text = "Copy To Clipboard";
-            this.btnScraperCopyToClipboard.Click += new XylosButton.ClickEventHandler(this.btnScraperCopyToClipboard_Click);
+            this.btnScraperCopyToClipboard.Click += new System.EventHandler(btnScraperCopyToClipboard_Click);
             // 
             // lblScraperUpdated
             // 
@@ -376,29 +371,22 @@
             // 
             // txtScraperTimeout
             // 
-            this.txtScraperTimeout.EnabledCalc = true;
             this.txtScraperTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtScraperTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtScraperTimeout.Location = new System.Drawing.Point(83, 136);
-            this.txtScraperTimeout.MaxLength = 32767;
-            this.txtScraperTimeout.MultiLine = false;
             this.txtScraperTimeout.Name = "txtScraperTimeout";
-            this.txtScraperTimeout.ReadOnly = false;
-            this.txtScraperTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtScraperTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtScraperTimeout.TabIndex = 5;
             this.txtScraperTimeout.Text = "5000";
-            this.txtScraperTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtScraperTimeout.UseSystemPasswordChar = false;
             // 
             // btnScraperSave
             // 
-            this.btnScraperSave.EnabledCalc = true;
             this.btnScraperSave.Location = new System.Drawing.Point(83, 264);
             this.btnScraperSave.Name = "btnScraperSave";
             this.btnScraperSave.Size = new System.Drawing.Size(130, 23);
             this.btnScraperSave.TabIndex = 27;
             this.btnScraperSave.Text = "Save Proxies";
-            this.btnScraperSave.Click += new XylosButton.ClickEventHandler(this.btnScraperSave_Click);
+            this.btnScraperSave.Click += new System.EventHandler(this.btnScraperSave_Click);
             // 
             // lblProxiesFetched
             // 
@@ -411,13 +399,12 @@
             // 
             // btnScraperFetch
             // 
-            this.btnScraperFetch.EnabledCalc = true;
             this.btnScraperFetch.Location = new System.Drawing.Point(83, 171);
             this.btnScraperFetch.Name = "btnScraperFetch";
             this.btnScraperFetch.Size = new System.Drawing.Size(130, 23);
             this.btnScraperFetch.TabIndex = 25;
             this.btnScraperFetch.Text = "Fetch";
-            this.btnScraperFetch.Click += new XylosButton.ClickEventHandler(this.btnScraperFetch_Click);
+            this.btnScraperFetch.Click += new System.EventHandler(this.btnScraperFetch_Click);
             // 
             // label25
             // 
@@ -431,18 +418,13 @@
             // comboScraperAnonymity
             // 
             this.comboScraperAnonymity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboScraperAnonymity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboScraperAnonymity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScraperAnonymity.EnabledCalc = true;
-            this.comboScraperAnonymity.FormattingEnabled = true;
-            this.comboScraperAnonymity.ItemHeight = 20;
+            this.comboScraperAnonymity.Location = new System.Drawing.Point(83, 72);
+            this.comboScraperAnonymity.Name = "comboScraperAnonymity";
             this.comboScraperAnonymity.Items.AddRange(new object[] {
             "All",
             "Elite",
             "Anonymous",
             "Transparent"});
-            this.comboScraperAnonymity.Location = new System.Drawing.Point(83, 72);
-            this.comboScraperAnonymity.Name = "comboScraperAnonymity";
             this.comboScraperAnonymity.Size = new System.Drawing.Size(130, 26);
             this.comboScraperAnonymity.TabIndex = 3;
             // 
@@ -458,13 +440,10 @@
             // comboScraperCountry
             // 
             this.comboScraperCountry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboScraperCountry.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboScraperCountry.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScraperCountry.EnabledCalc = true;
-            this.comboScraperCountry.FormattingEnabled = true;
-            this.comboScraperCountry.ItemHeight = 20;
+            this.comboScraperCountry.Location = new System.Drawing.Point(83, 40);
+            this.comboScraperCountry.Name = "comboScraperCountry";
             this.comboScraperCountry.Items.AddRange(new object[] {
-            "All",
+                "All",
             "AL",
             "AM",
             "AR",
@@ -514,9 +493,7 @@
             "VN",
             "YE",
             "ZA"});
-            this.comboScraperCountry.Location = new System.Drawing.Point(83, 40);
-            this.comboScraperCountry.Name = "comboScraperCountry";
-            this.comboScraperCountry.Size = new System.Drawing.Size(130, 26);
+            this.comboScraperCountry.Size = new System.Drawing.Size(130, 23);
             this.comboScraperCountry.TabIndex = 2;
             // 
             // label23
@@ -531,18 +508,13 @@
             // comboScraperType
             // 
             this.comboScraperType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboScraperType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboScraperType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboScraperType.EnabledCalc = true;
-            this.comboScraperType.FormattingEnabled = true;
-            this.comboScraperType.ItemHeight = 20;
+            this.comboScraperType.Location = new System.Drawing.Point(83, 8);
+            this.comboScraperType.Name = "comboScraperType";
             this.comboScraperType.Items.AddRange(new object[] {
             "HTTP",
             "SOCKS4",
             "SOCKS5"});
-            this.comboScraperType.Location = new System.Drawing.Point(83, 8);
-            this.comboScraperType.Name = "comboScraperType";
-            this.comboScraperType.Size = new System.Drawing.Size(130, 26);
+            this.comboScraperType.Size = new System.Drawing.Size(130, 23);
             this.comboScraperType.TabIndex = 1;
             // 
             // label22
@@ -603,19 +575,13 @@
             // 
             // txtCreatorTimeout
             // 
-            this.txtCreatorTimeout.EnabledCalc = true;
             this.txtCreatorTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCreatorTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtCreatorTimeout.Location = new System.Drawing.Point(94, 145);
-            this.txtCreatorTimeout.MaxLength = 32767;
-            this.txtCreatorTimeout.MultiLine = false;
             this.txtCreatorTimeout.Name = "txtCreatorTimeout";
-            this.txtCreatorTimeout.ReadOnly = false;
-            this.txtCreatorTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtCreatorTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtCreatorTimeout.TabIndex = 10;
             this.txtCreatorTimeout.Text = "5000";
-            this.txtCreatorTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCreatorTimeout.UseSystemPasswordChar = false;
             // 
             // label39
             // 
@@ -628,38 +594,30 @@
             // 
             // btnCreatorStop
             // 
-            this.btnCreatorStop.EnabledCalc = false;
             this.btnCreatorStop.Location = new System.Drawing.Point(94, 253);
             this.btnCreatorStop.Name = "btnCreatorStop";
             this.btnCreatorStop.Size = new System.Drawing.Size(130, 23);
             this.btnCreatorStop.TabIndex = 28;
             this.btnCreatorStop.Text = "Stop";
-            this.btnCreatorStop.Click += new XylosButton.ClickEventHandler(this.btnCreatorStop_Click);
+            this.btnCreatorStop.Click += new System.EventHandler(this.btnCreatorStop_Click);
             // 
             // btnCreatorStart
             // 
-            this.btnCreatorStart.EnabledCalc = true;
             this.btnCreatorStart.Location = new System.Drawing.Point(94, 224);
             this.btnCreatorStart.Name = "btnCreatorStart";
             this.btnCreatorStart.Size = new System.Drawing.Size(130, 23);
             this.btnCreatorStart.TabIndex = 27;
             this.btnCreatorStart.Text = "Start";
-            this.btnCreatorStart.Click += new XylosButton.ClickEventHandler(this.btnCreatorStart_Click);
+            this.btnCreatorStart.Click += new System.EventHandler(this.btnCreatorStart_Click);
             // 
             // txtCreatorAmount
             // 
-            this.txtCreatorAmount.EnabledCalc = true;
             this.txtCreatorAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCreatorAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtCreatorAmount.Location = new System.Drawing.Point(94, 78);
-            this.txtCreatorAmount.MaxLength = 32767;
-            this.txtCreatorAmount.MultiLine = false;
             this.txtCreatorAmount.Name = "txtCreatorAmount";
-            this.txtCreatorAmount.ReadOnly = false;
-            this.txtCreatorAmount.Size = new System.Drawing.Size(130, 29);
+            this.txtCreatorAmount.Size = new System.Drawing.Size(130, 23);
             this.txtCreatorAmount.TabIndex = 8;
-            this.txtCreatorAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCreatorAmount.UseSystemPasswordChar = false;
             // 
             // label4
             // 
@@ -672,13 +630,12 @@
             // 
             // btnCreatorLoadProxies
             // 
-            this.btnCreatorLoadProxies.EnabledCalc = true;
             this.btnCreatorLoadProxies.Location = new System.Drawing.Point(94, 180);
             this.btnCreatorLoadProxies.Name = "btnCreatorLoadProxies";
             this.btnCreatorLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnCreatorLoadProxies.TabIndex = 24;
             this.btnCreatorLoadProxies.Text = "Load Proxies";
-            this.btnCreatorLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnCreatorLoadProxies_Click);
+            this.btnCreatorLoadProxies.Click += new System.EventHandler(this.btnCreatorLoadProxies_Click);
             // 
             // lblCreatorProxies
             // 
@@ -691,19 +648,13 @@
             // 
             // txtCreatorThreads
             // 
-            this.txtCreatorThreads.EnabledCalc = true;
             this.txtCreatorThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCreatorThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtCreatorThreads.Location = new System.Drawing.Point(94, 43);
-            this.txtCreatorThreads.MaxLength = 32767;
-            this.txtCreatorThreads.MultiLine = false;
             this.txtCreatorThreads.Name = "txtCreatorThreads";
-            this.txtCreatorThreads.ReadOnly = false;
-            this.txtCreatorThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtCreatorThreads.Size = new System.Drawing.Size(130, 23);
             this.txtCreatorThreads.TabIndex = 7;
             this.txtCreatorThreads.Text = "35";
-            this.txtCreatorThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCreatorThreads.UseSystemPasswordChar = false;
             // 
             // label5
             // 
@@ -717,18 +668,13 @@
             // comboCreatorProxyType
             // 
             this.comboCreatorProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboCreatorProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboCreatorProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCreatorProxyType.EnabledCalc = true;
-            this.comboCreatorProxyType.FormattingEnabled = true;
-            this.comboCreatorProxyType.ItemHeight = 20;
+            this.comboCreatorProxyType.Location = new System.Drawing.Point(94, 113);
+            this.comboCreatorProxyType.Name = "comboCreatorProxyType";
             this.comboCreatorProxyType.Items.AddRange(new object[] {
             "HTTP",
             "SOCKS4",
             "SOCKS4a",
             "SOCKS5"});
-            this.comboCreatorProxyType.Location = new System.Drawing.Point(94, 113);
-            this.comboCreatorProxyType.Name = "comboCreatorProxyType";
             this.comboCreatorProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboCreatorProxyType.TabIndex = 9;
             // 
@@ -752,18 +698,12 @@
             // 
             // txtCreator2CaptchaKey
             // 
-            this.txtCreator2CaptchaKey.EnabledCalc = true;
             this.txtCreator2CaptchaKey.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCreator2CaptchaKey.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtCreator2CaptchaKey.Location = new System.Drawing.Point(94, 8);
-            this.txtCreator2CaptchaKey.MaxLength = 32767;
-            this.txtCreator2CaptchaKey.MultiLine = false;
             this.txtCreator2CaptchaKey.Name = "txtCreator2CaptchaKey";
-            this.txtCreator2CaptchaKey.ReadOnly = false;
-            this.txtCreator2CaptchaKey.Size = new System.Drawing.Size(130, 29);
+            this.txtCreator2CaptchaKey.Size = new System.Drawing.Size(130, 23);
             this.txtCreator2CaptchaKey.TabIndex = 6;
-            this.txtCreator2CaptchaKey.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCreator2CaptchaKey.UseSystemPasswordChar = false;
             // 
             // label1
             // 
@@ -814,23 +754,21 @@
             // 
             // btnLegacyStop
             // 
-            this.btnLegacyStop.EnabledCalc = false;
             this.btnLegacyStop.Location = new System.Drawing.Point(63, 116);
             this.btnLegacyStop.Name = "btnLegacyStop";
             this.btnLegacyStop.Size = new System.Drawing.Size(130, 23);
             this.btnLegacyStop.TabIndex = 34;
             this.btnLegacyStop.Text = "Stop";
-            this.btnLegacyStop.Click += new XylosButton.ClickEventHandler(this.btnLegacyStop_Click);
+            this.btnLegacyStop.Click += new System.EventHandler(this.btnLegacyStop_Click);
             // 
             // btnLegacyStart
             // 
-            this.btnLegacyStart.EnabledCalc = true;
             this.btnLegacyStart.Location = new System.Drawing.Point(63, 87);
             this.btnLegacyStart.Name = "btnLegacyStart";
             this.btnLegacyStart.Size = new System.Drawing.Size(130, 23);
             this.btnLegacyStart.TabIndex = 33;
             this.btnLegacyStart.Text = "Start";
-            this.btnLegacyStart.Click += new XylosButton.ClickEventHandler(this.btnLegacyStart_Click);
+            this.btnLegacyStart.Click += new System.EventHandler(this.btnLegacyStart_Click);
             // 
             // lblLegacyAccounts
             // 
@@ -843,29 +781,21 @@
             // 
             // btnLegacyLoadAccounts
             // 
-            this.btnLegacyLoadAccounts.EnabledCalc = true;
             this.btnLegacyLoadAccounts.Location = new System.Drawing.Point(63, 43);
             this.btnLegacyLoadAccounts.Name = "btnLegacyLoadAccounts";
             this.btnLegacyLoadAccounts.Size = new System.Drawing.Size(130, 23);
             this.btnLegacyLoadAccounts.TabIndex = 31;
             this.btnLegacyLoadAccounts.Text = "Load Accounts";
-            this.btnLegacyLoadAccounts.Click += new XylosButton.ClickEventHandler(this.btnLegacyLoadAccounts_Click);
             // 
             // txtLegacyThreads
             // 
-            this.txtLegacyThreads.EnabledCalc = true;
             this.txtLegacyThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLegacyThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtLegacyThreads.Location = new System.Drawing.Point(63, 8);
-            this.txtLegacyThreads.MaxLength = 32767;
-            this.txtLegacyThreads.MultiLine = false;
             this.txtLegacyThreads.Name = "txtLegacyThreads";
-            this.txtLegacyThreads.ReadOnly = false;
-            this.txtLegacyThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtLegacyThreads.Size = new System.Drawing.Size(130, 23);
             this.txtLegacyThreads.TabIndex = 11;
             this.txtLegacyThreads.Text = "35";
-            this.txtLegacyThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtLegacyThreads.UseSystemPasswordChar = false;
             // 
             // label59
             // 
@@ -937,19 +867,13 @@
             // 
             // txtCheckerTimeout
             // 
-            this.txtCheckerTimeout.EnabledCalc = true;
             this.txtCheckerTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCheckerTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtCheckerTimeout.Location = new System.Drawing.Point(79, 75);
-            this.txtCheckerTimeout.MaxLength = 32767;
-            this.txtCheckerTimeout.MultiLine = false;
             this.txtCheckerTimeout.Name = "txtCheckerTimeout";
-            this.txtCheckerTimeout.ReadOnly = false;
-            this.txtCheckerTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtCheckerTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtCheckerTimeout.TabIndex = 14;
             this.txtCheckerTimeout.Text = "5000";
-            this.txtCheckerTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCheckerTimeout.UseSystemPasswordChar = false;
             // 
             // label29
             // 
@@ -962,19 +886,13 @@
             // 
             // comboCheckerProxyType
             // 
-            this.comboCheckerProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboCheckerProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboCheckerProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboCheckerProxyType.EnabledCalc = true;
-            this.comboCheckerProxyType.FormattingEnabled = true;
-            this.comboCheckerProxyType.ItemHeight = 20;
+            this.comboCheckerProxyType.Location = new System.Drawing.Point(79, 43);
+            this.comboCheckerProxyType.Name = "comboCheckerProxyType";
             this.comboCheckerProxyType.Items.AddRange(new object[] {
             "HTTP",
             "SOCKS4",
             "SOCKS4a",
             "SOCKS5"});
-            this.comboCheckerProxyType.Location = new System.Drawing.Point(79, 43);
-            this.comboCheckerProxyType.Name = "comboCheckerProxyType";
             this.comboCheckerProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboCheckerProxyType.TabIndex = 13;
             // 
@@ -1034,23 +952,21 @@
             // 
             // btnAccountCheckerStop
             // 
-            this.btnAccountCheckerStop.EnabledCalc = false;
             this.btnAccountCheckerStop.Location = new System.Drawing.Point(79, 227);
             this.btnAccountCheckerStop.Name = "btnAccountCheckerStop";
             this.btnAccountCheckerStop.Size = new System.Drawing.Size(130, 23);
             this.btnAccountCheckerStop.TabIndex = 23;
             this.btnAccountCheckerStop.Text = "Stop";
-            this.btnAccountCheckerStop.Click += new XylosButton.ClickEventHandler(this.btnAccountCheckerStop_Click);
+            this.btnAccountCheckerStop.Click += new System.EventHandler(this.btnAccountCheckerStop_Click);
             // 
             // btnAccountCheckerStart
             // 
-            this.btnAccountCheckerStart.EnabledCalc = true;
             this.btnAccountCheckerStart.Location = new System.Drawing.Point(79, 198);
             this.btnAccountCheckerStart.Name = "btnAccountCheckerStart";
             this.btnAccountCheckerStart.Size = new System.Drawing.Size(130, 23);
             this.btnAccountCheckerStart.TabIndex = 22;
             this.btnAccountCheckerStart.Text = "Start";
-            this.btnAccountCheckerStart.Click += new XylosButton.ClickEventHandler(this.btnAccountCheckerStart_Click);
+            this.btnAccountCheckerStart.Click += new System.EventHandler(this.btnAccountCheckerStart_Click);
             // 
             // lblCheckerAccounts
             // 
@@ -1072,39 +988,31 @@
             // 
             // btnAccountCheckerLoadProxies
             // 
-            this.btnAccountCheckerLoadProxies.EnabledCalc = true;
             this.btnAccountCheckerLoadProxies.Location = new System.Drawing.Point(79, 110);
             this.btnAccountCheckerLoadProxies.Name = "btnAccountCheckerLoadProxies";
             this.btnAccountCheckerLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnAccountCheckerLoadProxies.TabIndex = 19;
             this.btnAccountCheckerLoadProxies.Text = "Load Proxies";
-            this.btnAccountCheckerLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnAccountCheckerLoadProxies_Click);
+            this.btnAccountCheckerLoadProxies.Click += new System.EventHandler(this.btnAccountCheckerLoadProxies_Click);
             // 
             // btnAccountCheckerLoadAccounts
             // 
-            this.btnAccountCheckerLoadAccounts.EnabledCalc = true;
             this.btnAccountCheckerLoadAccounts.Location = new System.Drawing.Point(79, 154);
             this.btnAccountCheckerLoadAccounts.Name = "btnAccountCheckerLoadAccounts";
             this.btnAccountCheckerLoadAccounts.Size = new System.Drawing.Size(130, 23);
             this.btnAccountCheckerLoadAccounts.TabIndex = 18;
             this.btnAccountCheckerLoadAccounts.Text = "Load Accounts";
-            this.btnAccountCheckerLoadAccounts.Click += new XylosButton.ClickEventHandler(this.btnAccountCheckerLoadAccounts_Click);
+            this.btnAccountCheckerLoadAccounts.Click += new System.EventHandler(this.btnAccountCheckerLoadAccounts_Click);
             // 
             // txtAccountCheckerThreads
             // 
-            this.txtAccountCheckerThreads.EnabledCalc = true;
             this.txtAccountCheckerThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAccountCheckerThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtAccountCheckerThreads.Location = new System.Drawing.Point(79, 8);
-            this.txtAccountCheckerThreads.MaxLength = 32767;
-            this.txtAccountCheckerThreads.MultiLine = false;
             this.txtAccountCheckerThreads.Name = "txtAccountCheckerThreads";
-            this.txtAccountCheckerThreads.ReadOnly = false;
-            this.txtAccountCheckerThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtAccountCheckerThreads.Size = new System.Drawing.Size(130, 23);
             this.txtAccountCheckerThreads.TabIndex = 12;
             this.txtAccountCheckerThreads.Text = "35";
-            this.txtAccountCheckerThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAccountCheckerThreads.UseSystemPasswordChar = false;
             // 
             // label21
             // 
@@ -1150,19 +1058,13 @@
             // 
             // txtTokenCheckerThreads
             // 
-            this.txtTokenCheckerThreads.EnabledCalc = true;
             this.txtTokenCheckerThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTokenCheckerThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtTokenCheckerThreads.Location = new System.Drawing.Point(63, 8);
-            this.txtTokenCheckerThreads.MaxLength = 32767;
-            this.txtTokenCheckerThreads.MultiLine = false;
             this.txtTokenCheckerThreads.Name = "txtTokenCheckerThreads";
-            this.txtTokenCheckerThreads.ReadOnly = false;
-            this.txtTokenCheckerThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtTokenCheckerThreads.Size = new System.Drawing.Size(130, 23);
             this.txtTokenCheckerThreads.TabIndex = 15;
             this.txtTokenCheckerThreads.Text = "35";
-            this.txtTokenCheckerThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTokenCheckerThreads.UseSystemPasswordChar = false;
             // 
             // label6
             // 
@@ -1184,23 +1086,21 @@
             // 
             // btnTokenCheckerLoadTokens
             // 
-            this.btnTokenCheckerLoadTokens.EnabledCalc = true;
             this.btnTokenCheckerLoadTokens.Location = new System.Drawing.Point(63, 43);
             this.btnTokenCheckerLoadTokens.Name = "btnTokenCheckerLoadTokens";
             this.btnTokenCheckerLoadTokens.Size = new System.Drawing.Size(130, 23);
             this.btnTokenCheckerLoadTokens.TabIndex = 24;
             this.btnTokenCheckerLoadTokens.Text = "Load Tokens";
-            this.btnTokenCheckerLoadTokens.Click += new XylosButton.ClickEventHandler(this.btnTokenCheckerLoadTokens_Click);
+            this.btnTokenCheckerLoadTokens.Click += new System.EventHandler(this.btnTokenCheckerLoadTokens_Click);
             // 
             // btnTokenCheckerStop
             // 
-            this.btnTokenCheckerStop.EnabledCalc = false;
             this.btnTokenCheckerStop.Location = new System.Drawing.Point(63, 118);
             this.btnTokenCheckerStop.Name = "btnTokenCheckerStop";
             this.btnTokenCheckerStop.Size = new System.Drawing.Size(130, 23);
             this.btnTokenCheckerStop.TabIndex = 23;
             this.btnTokenCheckerStop.Text = "Stop";
-            this.btnTokenCheckerStop.Click += new XylosButton.ClickEventHandler(this.btnTokenCheckerStop_Click);
+            this.btnTokenCheckerStop.Click += new System.EventHandler(this.btnTokenCheckerStop_Click);
             // 
             // lblTokenCheckerBits
             // 
@@ -1249,13 +1149,12 @@
             // 
             // btnTokenCheckerStart
             // 
-            this.btnTokenCheckerStart.EnabledCalc = true;
             this.btnTokenCheckerStart.Location = new System.Drawing.Point(63, 89);
             this.btnTokenCheckerStart.Name = "btnTokenCheckerStart";
             this.btnTokenCheckerStart.Size = new System.Drawing.Size(130, 23);
             this.btnTokenCheckerStart.TabIndex = 15;
             this.btnTokenCheckerStart.Text = "Start";
-            this.btnTokenCheckerStart.Click += new XylosButton.ClickEventHandler(this.btnTokenCheckerStart_Click);
+            this.btnTokenCheckerStart.Click += new System.EventHandler(this.btnTokenCheckerStart_Click);
             // 
             // tabPage10
             // 
@@ -1304,19 +1203,13 @@
             // 
             // txtViewTimeout
             // 
-            this.txtViewTimeout.EnabledCalc = true;
             this.txtViewTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtViewTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtViewTimeout.Location = new System.Drawing.Point(79, 110);
-            this.txtViewTimeout.MaxLength = 32767;
-            this.txtViewTimeout.MultiLine = false;
             this.txtViewTimeout.Name = "txtViewTimeout";
-            this.txtViewTimeout.ReadOnly = false;
-            this.txtViewTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtViewTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtViewTimeout.TabIndex = 19;
             this.txtViewTimeout.Text = "5000";
-            this.txtViewTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtViewTimeout.UseSystemPasswordChar = false;
             // 
             // label43
             // 
@@ -1338,37 +1231,24 @@
             // 
             // btnViewStop
             // 
-            this.btnViewStop.EnabledCalc = false;
             this.btnViewStop.Location = new System.Drawing.Point(79, 218);
             this.btnViewStop.Name = "btnViewStop";
             this.btnViewStop.Size = new System.Drawing.Size(130, 23);
             this.btnViewStop.TabIndex = 55;
             this.btnViewStop.Text = "Stop";
-            this.btnViewStop.Click += new XylosButton.ClickEventHandler(this.btnViewStop_Click);
+            this.btnViewStop.Click += new System.EventHandler(this.btnViewStop_Click);
             // 
             // btnViewStart
             // 
-            this.btnViewStart.EnabledCalc = true;
             this.btnViewStart.Location = new System.Drawing.Point(79, 189);
             this.btnViewStart.Name = "btnViewStart";
             this.btnViewStart.Size = new System.Drawing.Size(130, 23);
             this.btnViewStart.TabIndex = 54;
             this.btnViewStart.Text = "Start";
-            this.btnViewStart.Click += new XylosButton.ClickEventHandler(this.btnViewStart_Click);
+            this.btnViewStart.Click += new System.EventHandler(this.btnViewStart_Click);
             // 
             // comboViewProxyType
             // 
-            this.comboViewProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboViewProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboViewProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboViewProxyType.EnabledCalc = true;
-            this.comboViewProxyType.FormattingEnabled = true;
-            this.comboViewProxyType.ItemHeight = 20;
-            this.comboViewProxyType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboViewProxyType.Location = new System.Drawing.Point(79, 78);
             this.comboViewProxyType.Name = "comboViewProxyType";
             this.comboViewProxyType.Size = new System.Drawing.Size(130, 26);
@@ -1394,29 +1274,22 @@
             // 
             // btnViewLoadProxies
             // 
-            this.btnViewLoadProxies.EnabledCalc = true;
             this.btnViewLoadProxies.Location = new System.Drawing.Point(79, 145);
             this.btnViewLoadProxies.Name = "btnViewLoadProxies";
             this.btnViewLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnViewLoadProxies.TabIndex = 47;
             this.btnViewLoadProxies.Text = "Load Proxies";
-            this.btnViewLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnViewLoadProxies_Click);
+            this.btnViewLoadProxies.Click += new System.EventHandler(this.btnViewLoadProxies_Click);
             // 
             // txtViewThreads
             // 
-            this.txtViewThreads.EnabledCalc = true;
             this.txtViewThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtViewThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtViewThreads.Location = new System.Drawing.Point(79, 43);
-            this.txtViewThreads.MaxLength = 32767;
-            this.txtViewThreads.MultiLine = false;
             this.txtViewThreads.Name = "txtViewThreads";
-            this.txtViewThreads.ReadOnly = false;
-            this.txtViewThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtViewThreads.Size = new System.Drawing.Size(130, 23);
             this.txtViewThreads.TabIndex = 17;
             this.txtViewThreads.Text = "35";
-            this.txtViewThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtViewThreads.UseSystemPasswordChar = false;
             // 
             // label40
             // 
@@ -1429,19 +1302,13 @@
             // 
             // txtViewChannel
             // 
-            this.txtViewChannel.EnabledCalc = true;
             this.txtViewChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtViewChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtViewChannel.Location = new System.Drawing.Point(79, 8);
-            this.txtViewChannel.MaxLength = 32767;
-            this.txtViewChannel.MultiLine = false;
             this.txtViewChannel.Name = "txtViewChannel";
-            this.txtViewChannel.ReadOnly = false;
-            this.txtViewChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtViewChannel.Size = new System.Drawing.Size(130, 23);
             this.txtViewChannel.TabIndex = 16;
             this.txtViewChannel.Text = "Username";
-            this.txtViewChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtViewChannel.UseSystemPasswordChar = false;
             // 
             // label41
             // 
@@ -1499,19 +1366,13 @@
             // 
             // txtChannelTimeout
             // 
-            this.txtChannelTimeout.EnabledCalc = true;
             this.txtChannelTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChannelTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChannelTimeout.Location = new System.Drawing.Point(79, 110);
-            this.txtChannelTimeout.MaxLength = 32767;
-            this.txtChannelTimeout.MultiLine = false;
             this.txtChannelTimeout.Name = "txtChannelTimeout";
-            this.txtChannelTimeout.ReadOnly = false;
-            this.txtChannelTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtChannelTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtChannelTimeout.TabIndex = 23;
             this.txtChannelTimeout.Text = "5000";
-            this.txtChannelTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChannelTimeout.UseSystemPasswordChar = false;
             // 
             // label53
             // 
@@ -1533,37 +1394,25 @@
             // 
             // btnChannelStop
             // 
-            this.btnChannelStop.EnabledCalc = false;
             this.btnChannelStop.Location = new System.Drawing.Point(79, 218);
             this.btnChannelStop.Name = "btnChannelStop";
             this.btnChannelStop.Size = new System.Drawing.Size(130, 23);
             this.btnChannelStop.TabIndex = 68;
             this.btnChannelStop.Text = "Stop";
-            this.btnChannelStop.Click += new XylosButton.ClickEventHandler(this.btnChannelStop_Click);
+            this.btnChannelStop.Click += new System.EventHandler(this.btnChannelStop_Click);
             // 
             // btnChannelStart
             // 
-            this.btnChannelStart.EnabledCalc = true;
             this.btnChannelStart.Location = new System.Drawing.Point(79, 189);
             this.btnChannelStart.Name = "btnChannelStart";
             this.btnChannelStart.Size = new System.Drawing.Size(130, 23);
             this.btnChannelStart.TabIndex = 67;
             this.btnChannelStart.Text = "Start";
-            this.btnChannelStart.Click += new XylosButton.ClickEventHandler(this.btnChannelStart_Click);
+            this.btnChannelStart.Click += new System.EventHandler(this.btnChannelStart_Click);
             // 
             // comboChannelType
             // 
             this.comboChannelType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboChannelType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboChannelType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboChannelType.EnabledCalc = true;
-            this.comboChannelType.FormattingEnabled = true;
-            this.comboChannelType.ItemHeight = 20;
-            this.comboChannelType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboChannelType.Location = new System.Drawing.Point(79, 78);
             this.comboChannelType.Name = "comboChannelType";
             this.comboChannelType.Size = new System.Drawing.Size(130, 26);
@@ -1589,29 +1438,22 @@
             // 
             // btnChannelLoadProxies
             // 
-            this.btnChannelLoadProxies.EnabledCalc = true;
             this.btnChannelLoadProxies.Location = new System.Drawing.Point(79, 145);
             this.btnChannelLoadProxies.Name = "btnChannelLoadProxies";
             this.btnChannelLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnChannelLoadProxies.TabIndex = 63;
             this.btnChannelLoadProxies.Text = "Load Proxies";
-            this.btnChannelLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnChannelLoadProxies_Click);
+            this.btnChannelLoadProxies.Click += new System.EventHandler(this.btnChannelLoadProxies_Click);
             // 
             // txtChannelThreads
             // 
-            this.txtChannelThreads.EnabledCalc = true;
             this.txtChannelThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChannelThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChannelThreads.Location = new System.Drawing.Point(79, 43);
-            this.txtChannelThreads.MaxLength = 32767;
-            this.txtChannelThreads.MultiLine = false;
             this.txtChannelThreads.Name = "txtChannelThreads";
-            this.txtChannelThreads.ReadOnly = false;
-            this.txtChannelThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtChannelThreads.Size = new System.Drawing.Size(130, 23);
             this.txtChannelThreads.TabIndex = 21;
             this.txtChannelThreads.Text = "35";
-            this.txtChannelThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChannelThreads.UseSystemPasswordChar = false;
             // 
             // label57
             // 
@@ -1624,19 +1466,13 @@
             // 
             // txtChannel
             // 
-            this.txtChannel.EnabledCalc = true;
             this.txtChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChannel.Location = new System.Drawing.Point(79, 8);
-            this.txtChannel.MaxLength = 32767;
-            this.txtChannel.MultiLine = false;
             this.txtChannel.Name = "txtChannel";
-            this.txtChannel.ReadOnly = false;
-            this.txtChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtChannel.Size = new System.Drawing.Size(130, 23);
             this.txtChannel.TabIndex = 20;
             this.txtChannel.Text = "Username";
-            this.txtChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChannel.UseSystemPasswordChar = false;
             // 
             // label58
             // 
@@ -1694,19 +1530,13 @@
             // 
             // txtVODTimeout
             // 
-            this.txtVODTimeout.EnabledCalc = true;
             this.txtVODTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtVODTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtVODTimeout.Location = new System.Drawing.Point(79, 110);
-            this.txtVODTimeout.MaxLength = 32767;
-            this.txtVODTimeout.MultiLine = false;
             this.txtVODTimeout.Name = "txtVODTimeout";
-            this.txtVODTimeout.ReadOnly = false;
-            this.txtVODTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtVODTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtVODTimeout.TabIndex = 27;
             this.txtVODTimeout.Text = "5000";
-            this.txtVODTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVODTimeout.UseSystemPasswordChar = false;
             // 
             // label60
             // 
@@ -1728,37 +1558,24 @@
             // 
             // btnVODStop
             // 
-            this.btnVODStop.EnabledCalc = false;
             this.btnVODStop.Location = new System.Drawing.Point(79, 218);
             this.btnVODStop.Name = "btnVODStop";
             this.btnVODStop.Size = new System.Drawing.Size(130, 23);
             this.btnVODStop.TabIndex = 82;
             this.btnVODStop.Text = "Stop";
-            this.btnVODStop.Click += new XylosButton.ClickEventHandler(this.btnVODStop_Click);
+            this.btnVODStop.Click += new System.EventHandler(this.btnVODStop_Click);
             // 
             // btnVODStart
             // 
-            this.btnVODStart.EnabledCalc = true;
             this.btnVODStart.Location = new System.Drawing.Point(79, 189);
             this.btnVODStart.Name = "btnVODStart";
             this.btnVODStart.Size = new System.Drawing.Size(130, 23);
             this.btnVODStart.TabIndex = 81;
             this.btnVODStart.Text = "Start";
-            this.btnVODStart.Click += new XylosButton.ClickEventHandler(this.btnVODStart_Click);
+            this.btnVODStart.Click += new System.EventHandler(this.btnVODStart_Click);
             // 
             // comboVODType
             // 
-            this.comboVODType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboVODType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboVODType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboVODType.EnabledCalc = true;
-            this.comboVODType.FormattingEnabled = true;
-            this.comboVODType.ItemHeight = 20;
-            this.comboVODType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboVODType.Location = new System.Drawing.Point(79, 78);
             this.comboVODType.Name = "comboVODType";
             this.comboVODType.Size = new System.Drawing.Size(130, 26);
@@ -1784,29 +1601,22 @@
             // 
             // btnVODLoadProxies
             // 
-            this.btnVODLoadProxies.EnabledCalc = true;
             this.btnVODLoadProxies.Location = new System.Drawing.Point(79, 145);
             this.btnVODLoadProxies.Name = "btnVODLoadProxies";
             this.btnVODLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnVODLoadProxies.TabIndex = 77;
             this.btnVODLoadProxies.Text = "Load Proxies";
-            this.btnVODLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnVODLoadProxies_Click);
+            this.btnVODLoadProxies.Click += new System.EventHandler(this.btnVODLoadProxies_Click);
             // 
             // txtVODThreads
             // 
-            this.txtVODThreads.EnabledCalc = true;
             this.txtVODThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtVODThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtVODThreads.Location = new System.Drawing.Point(79, 43);
-            this.txtVODThreads.MaxLength = 32767;
-            this.txtVODThreads.MultiLine = false;
             this.txtVODThreads.Name = "txtVODThreads";
-            this.txtVODThreads.ReadOnly = false;
-            this.txtVODThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtVODThreads.Size = new System.Drawing.Size(130, 23);
             this.txtVODThreads.TabIndex = 25;
             this.txtVODThreads.Text = "35";
-            this.txtVODThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVODThreads.UseSystemPasswordChar = false;
             // 
             // label65
             // 
@@ -1819,18 +1629,12 @@
             // 
             // txtVODID
             // 
-            this.txtVODID.EnabledCalc = true;
             this.txtVODID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtVODID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtVODID.Location = new System.Drawing.Point(79, 8);
-            this.txtVODID.MaxLength = 32767;
-            this.txtVODID.MultiLine = false;
             this.txtVODID.Name = "txtVODID";
-            this.txtVODID.ReadOnly = false;
-            this.txtVODID.Size = new System.Drawing.Size(130, 29);
+            this.txtVODID.Size = new System.Drawing.Size(130, 23);
             this.txtVODID.TabIndex = 24;
-            this.txtVODID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtVODID.UseSystemPasswordChar = false;
             // 
             // label66
             // 
@@ -1890,9 +1694,7 @@
             // 
             // radioUnfollow
             // 
-            this.radioUnfollow.Checked = false;
             this.radioUnfollow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioUnfollow.EnabledCalc = true;
             this.radioUnfollow.Location = new System.Drawing.Point(79, 32);
             this.radioUnfollow.Name = "radioUnfollow";
             this.radioUnfollow.Size = new System.Drawing.Size(82, 18);
@@ -1903,11 +1705,11 @@
             // 
             this.radioFollow.Checked = true;
             this.radioFollow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioFollow.EnabledCalc = true;
             this.radioFollow.Location = new System.Drawing.Point(79, 8);
             this.radioFollow.Name = "radioFollow";
             this.radioFollow.Size = new System.Drawing.Size(72, 18);
             this.radioFollow.TabIndex = 52;
+            this.radioFollow.TabStop = true;
             this.radioFollow.Text = "Follow";
             // 
             // label50
@@ -1921,19 +1723,13 @@
             // 
             // txtFollowTimeout
             // 
-            this.txtFollowTimeout.EnabledCalc = false;
             this.txtFollowTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFollowTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtFollowTimeout.Location = new System.Drawing.Point(79, 252);
-            this.txtFollowTimeout.MaxLength = 32767;
-            this.txtFollowTimeout.MultiLine = false;
             this.txtFollowTimeout.Name = "txtFollowTimeout";
-            this.txtFollowTimeout.ReadOnly = false;
-            this.txtFollowTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtFollowTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtFollowTimeout.TabIndex = 34;
             this.txtFollowTimeout.Text = "5000";
-            this.txtFollowTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFollowTimeout.UseSystemPasswordChar = false;
             // 
             // label51
             // 
@@ -1946,29 +1742,15 @@
             // 
             // chkFollowUseProxies
             // 
-            this.chkFollowUseProxies.Checked = false;
             this.chkFollowUseProxies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkFollowUseProxies.EnabledCalc = true;
             this.chkFollowUseProxies.Location = new System.Drawing.Point(79, 196);
             this.chkFollowUseProxies.Name = "chkFollowUseProxies";
             this.chkFollowUseProxies.Size = new System.Drawing.Size(93, 18);
             this.chkFollowUseProxies.TabIndex = 32;
             this.chkFollowUseProxies.Text = "Use Proxies";
-            this.chkFollowUseProxies.CheckedChanged += new XylosCheckBox.CheckedChangedEventHandler(this.chkFollowUseProxies_CheckedChanged);
             // 
             // comboFollowProxyType
             // 
-            this.comboFollowProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboFollowProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboFollowProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboFollowProxyType.EnabledCalc = true;
-            this.comboFollowProxyType.FormattingEnabled = true;
-            this.comboFollowProxyType.ItemHeight = 20;
-            this.comboFollowProxyType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboFollowProxyType.Location = new System.Drawing.Point(79, 220);
             this.comboFollowProxyType.Name = "comboFollowProxyType";
             this.comboFollowProxyType.Size = new System.Drawing.Size(130, 26);
@@ -1994,13 +1776,12 @@
             // 
             // btnFollowLoadProxies
             // 
-            this.btnFollowLoadProxies.EnabledCalc = false;
             this.btnFollowLoadProxies.Location = new System.Drawing.Point(79, 287);
             this.btnFollowLoadProxies.Name = "btnFollowLoadProxies";
             this.btnFollowLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnFollowLoadProxies.TabIndex = 43;
             this.btnFollowLoadProxies.Text = "Load Proxies";
-            this.btnFollowLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnFollowLoadProxies_Click);
+            this.btnFollowLoadProxies.Click += new System.EventHandler(this.btnFollowLoadProxies_Click);
             // 
             // label17
             // 
@@ -2013,19 +1794,13 @@
             // 
             // txtFollowDelay
             // 
-            this.txtFollowDelay.EnabledCalc = true;
             this.txtFollowDelay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFollowDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtFollowDelay.Location = new System.Drawing.Point(79, 161);
-            this.txtFollowDelay.MaxLength = 32767;
-            this.txtFollowDelay.MultiLine = false;
             this.txtFollowDelay.Name = "txtFollowDelay";
-            this.txtFollowDelay.ReadOnly = false;
-            this.txtFollowDelay.Size = new System.Drawing.Size(105, 29);
+            this.txtFollowDelay.Size = new System.Drawing.Size(105, 23);
             this.txtFollowDelay.TabIndex = 31;
             this.txtFollowDelay.Text = "100";
-            this.txtFollowDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFollowDelay.UseSystemPasswordChar = false;
             // 
             // label16
             // 
@@ -2047,29 +1822,22 @@
             // 
             // btnFollowLoadTokens
             // 
-            this.btnFollowLoadTokens.EnabledCalc = true;
             this.btnFollowLoadTokens.Location = new System.Drawing.Point(79, 331);
             this.btnFollowLoadTokens.Name = "btnFollowLoadTokens";
             this.btnFollowLoadTokens.Size = new System.Drawing.Size(130, 23);
             this.btnFollowLoadTokens.TabIndex = 16;
             this.btnFollowLoadTokens.Text = "Load Tokens";
-            this.btnFollowLoadTokens.Click += new XylosButton.ClickEventHandler(this.btnFollowLoadTokens_Click);
+            this.btnFollowLoadTokens.Click += new System.EventHandler(this.btnFollowLoadTokens_Click);
             // 
             // txtFollowThreads
             // 
-            this.txtFollowThreads.EnabledCalc = true;
             this.txtFollowThreads.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFollowThreads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtFollowThreads.Location = new System.Drawing.Point(79, 91);
-            this.txtFollowThreads.MaxLength = 32767;
-            this.txtFollowThreads.MultiLine = false;
             this.txtFollowThreads.Name = "txtFollowThreads";
-            this.txtFollowThreads.ReadOnly = false;
-            this.txtFollowThreads.Size = new System.Drawing.Size(130, 29);
+            this.txtFollowThreads.Size = new System.Drawing.Size(130, 23);
             this.txtFollowThreads.TabIndex = 29;
             this.txtFollowThreads.Text = "35";
-            this.txtFollowThreads.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFollowThreads.UseSystemPasswordChar = false;
             // 
             // label9
             // 
@@ -2082,19 +1850,13 @@
             // 
             // txtFollowChannel
             // 
-            this.txtFollowChannel.EnabledCalc = true;
             this.txtFollowChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFollowChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtFollowChannel.Location = new System.Drawing.Point(79, 56);
-            this.txtFollowChannel.MaxLength = 32767;
-            this.txtFollowChannel.MultiLine = false;
             this.txtFollowChannel.Name = "txtFollowChannel";
-            this.txtFollowChannel.ReadOnly = false;
-            this.txtFollowChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtFollowChannel.Size = new System.Drawing.Size(130, 23);
             this.txtFollowChannel.TabIndex = 28;
             this.txtFollowChannel.Text = "Username";
-            this.txtFollowChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFollowChannel.UseSystemPasswordChar = false;
             // 
             // label8
             // 
@@ -2107,13 +1869,12 @@
             // 
             // btnFollowStop
             // 
-            this.btnFollowStop.EnabledCalc = false;
             this.btnFollowStop.Location = new System.Drawing.Point(79, 404);
             this.btnFollowStop.Name = "btnFollowStop";
             this.btnFollowStop.Size = new System.Drawing.Size(130, 23);
             this.btnFollowStop.TabIndex = 11;
             this.btnFollowStop.Text = "Stop";
-            this.btnFollowStop.Click += new XylosButton.ClickEventHandler(this.btnFollowStop_Click);
+            this.btnFollowStop.Click += new System.EventHandler(this.btnFollowStop_Click);
             // 
             // lblFollowFail
             // 
@@ -2135,28 +1896,21 @@
             // 
             // btnFollowStart
             // 
-            this.btnFollowStart.EnabledCalc = true;
             this.btnFollowStart.Location = new System.Drawing.Point(79, 375);
             this.btnFollowStart.Name = "btnFollowStart";
             this.btnFollowStart.Size = new System.Drawing.Size(130, 23);
             this.btnFollowStart.TabIndex = 6;
             this.btnFollowStart.Text = "Start";
-            this.btnFollowStart.Click += new XylosButton.ClickEventHandler(this.btnFollowStart_Click);
+            this.btnFollowStart.Click += new System.EventHandler(this.btnFollowStart_Click);
             // 
             // txtFollowAmount
             // 
-            this.txtFollowAmount.EnabledCalc = true;
             this.txtFollowAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFollowAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtFollowAmount.Location = new System.Drawing.Point(79, 126);
-            this.txtFollowAmount.MaxLength = 32767;
-            this.txtFollowAmount.MultiLine = false;
             this.txtFollowAmount.Name = "txtFollowAmount";
-            this.txtFollowAmount.ReadOnly = false;
-            this.txtFollowAmount.Size = new System.Drawing.Size(130, 29);
+            this.txtFollowAmount.Size = new System.Drawing.Size(130, 23);
             this.txtFollowAmount.TabIndex = 30;
-            this.txtFollowAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtFollowAmount.UseSystemPasswordChar = false;
             // 
             // label2
             // 
@@ -2222,19 +1976,13 @@
             // 
             // txtChatTimeout
             // 
-            this.txtChatTimeout.EnabledCalc = false;
             this.txtChatTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChatTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChatTimeout.Location = new System.Drawing.Point(79, 169);
-            this.txtChatTimeout.MaxLength = 32767;
-            this.txtChatTimeout.MultiLine = false;
             this.txtChatTimeout.Name = "txtChatTimeout";
-            this.txtChatTimeout.ReadOnly = false;
-            this.txtChatTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtChatTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtChatTimeout.TabIndex = 40;
             this.txtChatTimeout.Text = "5000";
-            this.txtChatTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChatTimeout.UseSystemPasswordChar = false;
             // 
             // label33
             // 
@@ -2247,29 +1995,15 @@
             // 
             // chkChatUseProxies
             // 
-            this.chkChatUseProxies.Checked = false;
             this.chkChatUseProxies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkChatUseProxies.EnabledCalc = true;
             this.chkChatUseProxies.Location = new System.Drawing.Point(79, 113);
             this.chkChatUseProxies.Name = "chkChatUseProxies";
             this.chkChatUseProxies.Size = new System.Drawing.Size(93, 18);
             this.chkChatUseProxies.TabIndex = 38;
             this.chkChatUseProxies.Text = "Use Proxies";
-            this.chkChatUseProxies.CheckedChanged += new XylosCheckBox.CheckedChangedEventHandler(this.chkChatUseProxies_CheckedChanged);
             // 
             // comboChatProxyType
             // 
-            this.comboChatProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboChatProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboChatProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboChatProxyType.EnabledCalc = true;
-            this.comboChatProxyType.FormattingEnabled = true;
-            this.comboChatProxyType.ItemHeight = 20;
-            this.comboChatProxyType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboChatProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboChatProxyType.Name = "comboChatProxyType";
             this.comboChatProxyType.Size = new System.Drawing.Size(130, 26);
@@ -2295,13 +2029,12 @@
             // 
             // btnChatLoadProxies
             // 
-            this.btnChatLoadProxies.EnabledCalc = false;
             this.btnChatLoadProxies.Location = new System.Drawing.Point(79, 204);
             this.btnChatLoadProxies.Name = "btnChatLoadProxies";
             this.btnChatLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnChatLoadProxies.TabIndex = 35;
             this.btnChatLoadProxies.Text = "Load Proxies";
-            this.btnChatLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnChatLoadProxies_Click);
+            this.btnChatLoadProxies.Click += new System.EventHandler(this.btnChatLoadProxies_Click);
             // 
             // label18
             // 
@@ -2314,19 +2047,13 @@
             // 
             // txtChatDelay
             // 
-            this.txtChatDelay.EnabledCalc = true;
             this.txtChatDelay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChatDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChatDelay.Location = new System.Drawing.Point(79, 78);
-            this.txtChatDelay.MaxLength = 32767;
-            this.txtChatDelay.MultiLine = false;
             this.txtChatDelay.Name = "txtChatDelay";
-            this.txtChatDelay.ReadOnly = false;
-            this.txtChatDelay.Size = new System.Drawing.Size(105, 29);
+            this.txtChatDelay.Size = new System.Drawing.Size(105, 23);
             this.txtChatDelay.TabIndex = 37;
             this.txtChatDelay.Text = "100";
-            this.txtChatDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChatDelay.UseSystemPasswordChar = false;
             // 
             // label15
             // 
@@ -2348,29 +2075,22 @@
             // 
             // btnChatLoadTokens
             // 
-            this.btnChatLoadTokens.EnabledCalc = true;
             this.btnChatLoadTokens.Location = new System.Drawing.Point(79, 248);
             this.btnChatLoadTokens.Name = "btnChatLoadTokens";
             this.btnChatLoadTokens.Size = new System.Drawing.Size(130, 23);
             this.btnChatLoadTokens.TabIndex = 28;
             this.btnChatLoadTokens.Text = "Load Tokens";
-            this.btnChatLoadTokens.Click += new XylosButton.ClickEventHandler(this.btnChatLoadTokens_Click);
+            this.btnChatLoadTokens.Click += new System.EventHandler(this.btnChatLoadTokens_Click);
             // 
             // txtChatBots
             // 
-            this.txtChatBots.EnabledCalc = true;
             this.txtChatBots.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChatBots.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChatBots.Location = new System.Drawing.Point(79, 43);
-            this.txtChatBots.MaxLength = 32767;
-            this.txtChatBots.MultiLine = false;
             this.txtChatBots.Name = "txtChatBots";
-            this.txtChatBots.ReadOnly = false;
-            this.txtChatBots.Size = new System.Drawing.Size(130, 29);
+            this.txtChatBots.Size = new System.Drawing.Size(130, 23);
             this.txtChatBots.TabIndex = 36;
             this.txtChatBots.Text = "5";
-            this.txtChatBots.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChatBots.UseSystemPasswordChar = false;
             // 
             // label13
             // 
@@ -2383,19 +2103,13 @@
             // 
             // txtChatChannel
             // 
-            this.txtChatChannel.EnabledCalc = true;
             this.txtChatChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChatChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtChatChannel.Location = new System.Drawing.Point(79, 8);
-            this.txtChatChannel.MaxLength = 32767;
-            this.txtChatChannel.MultiLine = false;
             this.txtChatChannel.Name = "txtChatChannel";
-            this.txtChatChannel.ReadOnly = false;
-            this.txtChatChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtChatChannel.Size = new System.Drawing.Size(130, 23);
             this.txtChatChannel.TabIndex = 35;
             this.txtChatChannel.Text = "Username";
-            this.txtChatChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChatChannel.UseSystemPasswordChar = false;
             // 
             // label14
             // 
@@ -2408,13 +2122,12 @@
             // 
             // btnChatStop
             // 
-            this.btnChatStop.EnabledCalc = false;
             this.btnChatStop.Location = new System.Drawing.Point(79, 365);
             this.btnChatStop.Name = "btnChatStop";
             this.btnChatStop.Size = new System.Drawing.Size(130, 23);
             this.btnChatStop.TabIndex = 14;
             this.btnChatStop.Text = "Stop";
-            this.btnChatStop.Click += new XylosButton.ClickEventHandler(this.btnChatStop_Click);
+            this.btnChatStop.Click += new System.EventHandler(this.btnChatStop_Click);
             // 
             // lblSuccess
             // 
@@ -2427,13 +2140,12 @@
             // 
             // btnChatStart
             // 
-            this.btnChatStart.EnabledCalc = true;
             this.btnChatStart.Location = new System.Drawing.Point(79, 336);
             this.btnChatStart.Name = "btnChatStart";
             this.btnChatStart.Size = new System.Drawing.Size(130, 23);
             this.btnChatStart.TabIndex = 12;
             this.btnChatStart.Text = "Start";
-            this.btnChatStart.Click += new XylosButton.ClickEventHandler(this.btnChatStart_Click);
+            this.btnChatStart.Click += new System.EventHandler(this.btnChatStart_Click);
             // 
             // lblMessages
             // 
@@ -2446,13 +2158,12 @@
             // 
             // btnLoadMessages
             // 
-            this.btnLoadMessages.EnabledCalc = true;
             this.btnLoadMessages.Location = new System.Drawing.Point(79, 292);
             this.btnLoadMessages.Name = "btnLoadMessages";
             this.btnLoadMessages.Size = new System.Drawing.Size(130, 23);
             this.btnLoadMessages.TabIndex = 0;
             this.btnLoadMessages.Text = "Load Messages";
-            this.btnLoadMessages.Click += new XylosButton.ClickEventHandler(this.btnLoadMessages_Click);
+            this.btnLoadMessages.Click += new System.EventHandler(this.btnLoadMessages_Click);
             // 
             // tabPage6
             // 
@@ -2498,19 +2209,13 @@
             // 
             // txtSubTimeout
             // 
-            this.txtSubTimeout.EnabledCalc = false;
             this.txtSubTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSubTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtSubTimeout.Location = new System.Drawing.Point(79, 169);
-            this.txtSubTimeout.MaxLength = 32767;
-            this.txtSubTimeout.MultiLine = false;
             this.txtSubTimeout.Name = "txtSubTimeout";
-            this.txtSubTimeout.ReadOnly = false;
-            this.txtSubTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtSubTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtSubTimeout.TabIndex = 46;
             this.txtSubTimeout.Text = "5000";
-            this.txtSubTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSubTimeout.UseSystemPasswordChar = false;
             // 
             // label45
             // 
@@ -2523,29 +2228,15 @@
             // 
             // chkSubUseProxies
             // 
-            this.chkSubUseProxies.Checked = false;
             this.chkSubUseProxies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkSubUseProxies.EnabledCalc = true;
             this.chkSubUseProxies.Location = new System.Drawing.Point(79, 113);
             this.chkSubUseProxies.Name = "chkSubUseProxies";
             this.chkSubUseProxies.Size = new System.Drawing.Size(93, 18);
             this.chkSubUseProxies.TabIndex = 44;
             this.chkSubUseProxies.Text = "Use Proxies";
-            this.chkSubUseProxies.CheckedChanged += new XylosCheckBox.CheckedChangedEventHandler(this.chkSubUseProxies_CheckedChanged);
             // 
             // comboSubProxyType
             // 
-            this.comboSubProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboSubProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboSubProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboSubProxyType.EnabledCalc = true;
-            this.comboSubProxyType.FormattingEnabled = true;
-            this.comboSubProxyType.ItemHeight = 20;
-            this.comboSubProxyType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboSubProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboSubProxyType.Name = "comboSubProxyType";
             this.comboSubProxyType.Size = new System.Drawing.Size(130, 26);
@@ -2571,13 +2262,12 @@
             // 
             // btnSubLoadProxies
             // 
-            this.btnSubLoadProxies.EnabledCalc = false;
             this.btnSubLoadProxies.Location = new System.Drawing.Point(79, 204);
             this.btnSubLoadProxies.Name = "btnSubLoadProxies";
             this.btnSubLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnSubLoadProxies.TabIndex = 60;
             this.btnSubLoadProxies.Text = "Load Proxies";
-            this.btnSubLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnSubLoadProxies_Click);
+            this.btnSubLoadProxies.Click += new System.EventHandler(this.btnSubLoadProxies_Click);
             // 
             // label19
             // 
@@ -2590,19 +2280,13 @@
             // 
             // txtSubDelay
             // 
-            this.txtSubDelay.EnabledCalc = true;
             this.txtSubDelay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSubDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtSubDelay.Location = new System.Drawing.Point(79, 78);
-            this.txtSubDelay.MaxLength = 32767;
-            this.txtSubDelay.MultiLine = false;
             this.txtSubDelay.Name = "txtSubDelay";
-            this.txtSubDelay.ReadOnly = false;
-            this.txtSubDelay.Size = new System.Drawing.Size(105, 29);
+            this.txtSubDelay.Size = new System.Drawing.Size(105, 23);
             this.txtSubDelay.TabIndex = 43;
             this.txtSubDelay.Text = "100";
-            this.txtSubDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSubDelay.UseSystemPasswordChar = false;
             // 
             // label12
             // 
@@ -2624,29 +2308,22 @@
             // 
             // btnSubLoadTokens
             // 
-            this.btnSubLoadTokens.EnabledCalc = true;
             this.btnSubLoadTokens.Location = new System.Drawing.Point(79, 248);
             this.btnSubLoadTokens.Name = "btnSubLoadTokens";
             this.btnSubLoadTokens.Size = new System.Drawing.Size(130, 23);
             this.btnSubLoadTokens.TabIndex = 22;
             this.btnSubLoadTokens.Text = "Load Tokens";
-            this.btnSubLoadTokens.Click += new XylosButton.ClickEventHandler(this.btnSubLoadTokens_Click);
+            this.btnSubLoadTokens.Click += new System.EventHandler(this.btnSubLoadTokens_Click);
             // 
             // txtSubBots
             // 
-            this.txtSubBots.EnabledCalc = true;
             this.txtSubBots.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSubBots.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtSubBots.Location = new System.Drawing.Point(79, 43);
-            this.txtSubBots.MaxLength = 32767;
-            this.txtSubBots.MultiLine = false;
             this.txtSubBots.Name = "txtSubBots";
-            this.txtSubBots.ReadOnly = false;
-            this.txtSubBots.Size = new System.Drawing.Size(130, 29);
+            this.txtSubBots.Size = new System.Drawing.Size(130, 23);
             this.txtSubBots.TabIndex = 42;
             this.txtSubBots.Text = "5";
-            this.txtSubBots.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSubBots.UseSystemPasswordChar = false;
             // 
             // label10
             // 
@@ -2659,19 +2336,13 @@
             // 
             // txtSubChannel
             // 
-            this.txtSubChannel.EnabledCalc = true;
             this.txtSubChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSubChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtSubChannel.Location = new System.Drawing.Point(79, 8);
-            this.txtSubChannel.MaxLength = 32767;
-            this.txtSubChannel.MultiLine = false;
             this.txtSubChannel.Name = "txtSubChannel";
-            this.txtSubChannel.ReadOnly = false;
-            this.txtSubChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtSubChannel.Size = new System.Drawing.Size(130, 23);
             this.txtSubChannel.TabIndex = 41;
             this.txtSubChannel.Text = "Username";
-            this.txtSubChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSubChannel.UseSystemPasswordChar = false;
             // 
             // label11
             // 
@@ -2684,13 +2355,12 @@
             // 
             // btnSubStop
             // 
-            this.btnSubStop.EnabledCalc = false;
             this.btnSubStop.Location = new System.Drawing.Point(79, 321);
             this.btnSubStop.Name = "btnSubStop";
             this.btnSubStop.Size = new System.Drawing.Size(130, 23);
             this.btnSubStop.TabIndex = 14;
             this.btnSubStop.Text = "Stop";
-            this.btnSubStop.Click += new XylosButton.ClickEventHandler(this.btnSubStop_Click);
+            this.btnSubStop.Click += new System.EventHandler(this.btnSubStop_Click);
             // 
             // lblSubFail
             // 
@@ -2712,13 +2382,12 @@
             // 
             // btnSubStart
             // 
-            this.btnSubStart.EnabledCalc = true;
             this.btnSubStart.Location = new System.Drawing.Point(79, 292);
             this.btnSubStart.Name = "btnSubStart";
             this.btnSubStart.Size = new System.Drawing.Size(130, 23);
             this.btnSubStart.TabIndex = 0;
             this.btnSubStart.Text = "Start";
-            this.btnSubStart.Click += new XylosButton.ClickEventHandler(this.btnSubStart_Click);
+            this.btnSubStart.Click += new System.EventHandler(this.btnSubStart_Click);
             // 
             // tabPage9
             // 
@@ -2764,19 +2433,13 @@
             // 
             // txtBitTimeout
             // 
-            this.txtBitTimeout.EnabledCalc = false;
             this.txtBitTimeout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBitTimeout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtBitTimeout.Location = new System.Drawing.Point(79, 169);
-            this.txtBitTimeout.MaxLength = 32767;
-            this.txtBitTimeout.MultiLine = false;
             this.txtBitTimeout.Name = "txtBitTimeout";
-            this.txtBitTimeout.ReadOnly = false;
-            this.txtBitTimeout.Size = new System.Drawing.Size(105, 29);
+            this.txtBitTimeout.Size = new System.Drawing.Size(105, 23);
             this.txtBitTimeout.TabIndex = 52;
             this.txtBitTimeout.Text = "5000";
-            this.txtBitTimeout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBitTimeout.UseSystemPasswordChar = false;
             // 
             // label48
             // 
@@ -2789,29 +2452,16 @@
             // 
             // chkBitUseProxies
             // 
-            this.chkBitUseProxies.Checked = false;
             this.chkBitUseProxies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkBitUseProxies.EnabledCalc = true;
             this.chkBitUseProxies.Location = new System.Drawing.Point(79, 113);
             this.chkBitUseProxies.Name = "chkBitUseProxies";
             this.chkBitUseProxies.Size = new System.Drawing.Size(93, 18);
             this.chkBitUseProxies.TabIndex = 50;
             this.chkBitUseProxies.Text = "Use Proxies";
-            this.chkBitUseProxies.CheckedChanged += new XylosCheckBox.CheckedChangedEventHandler(this.chkBitUseProxies_CheckedChanged);
             // 
             // comboBitProxyType
             // 
             this.comboBitProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBitProxyType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBitProxyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBitProxyType.EnabledCalc = true;
-            this.comboBitProxyType.FormattingEnabled = true;
-            this.comboBitProxyType.ItemHeight = 20;
-            this.comboBitProxyType.Items.AddRange(new object[] {
-            "HTTP",
-            "SOCKS4",
-            "SOCKS4a",
-            "SOCKS5"});
             this.comboBitProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboBitProxyType.Name = "comboBitProxyType";
             this.comboBitProxyType.Size = new System.Drawing.Size(130, 26);
@@ -2837,13 +2487,12 @@
             // 
             // btnBitLoadProxies
             // 
-            this.btnBitLoadProxies.EnabledCalc = false;
             this.btnBitLoadProxies.Location = new System.Drawing.Point(79, 204);
             this.btnBitLoadProxies.Name = "btnBitLoadProxies";
             this.btnBitLoadProxies.Size = new System.Drawing.Size(130, 23);
             this.btnBitLoadProxies.TabIndex = 61;
             this.btnBitLoadProxies.Text = "Load Proxies";
-            this.btnBitLoadProxies.Click += new XylosButton.ClickEventHandler(this.btnBitLoadProxies_Click);
+            this.btnBitLoadProxies.Click += new System.EventHandler(this.btnBitLoadProxies_Click);
             // 
             // label34
             // 
@@ -2856,19 +2505,13 @@
             // 
             // txtBitDelay
             // 
-            this.txtBitDelay.EnabledCalc = true;
             this.txtBitDelay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBitDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtBitDelay.Location = new System.Drawing.Point(79, 78);
-            this.txtBitDelay.MaxLength = 32767;
-            this.txtBitDelay.MultiLine = false;
             this.txtBitDelay.Name = "txtBitDelay";
-            this.txtBitDelay.ReadOnly = false;
-            this.txtBitDelay.Size = new System.Drawing.Size(105, 29);
+            this.txtBitDelay.Size = new System.Drawing.Size(105, 23);
             this.txtBitDelay.TabIndex = 49;
             this.txtBitDelay.Text = "100";
-            this.txtBitDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBitDelay.UseSystemPasswordChar = false;
             // 
             // label20
             // 
@@ -2899,23 +2542,21 @@
             // 
             // btnBitStop
             // 
-            this.btnBitStop.EnabledCalc = false;
             this.btnBitStop.Location = new System.Drawing.Point(79, 321);
             this.btnBitStop.Name = "btnBitStop";
             this.btnBitStop.Size = new System.Drawing.Size(130, 23);
             this.btnBitStop.TabIndex = 37;
             this.btnBitStop.Text = "Stop";
-            this.btnBitStop.Click += new XylosButton.ClickEventHandler(this.btnBitStop_Click);
+            this.btnBitStop.Click += new System.EventHandler(this.btnBitStop_Click);
             // 
             // btnBitStart
             // 
-            this.btnBitStart.EnabledCalc = true;
             this.btnBitStart.Location = new System.Drawing.Point(79, 292);
             this.btnBitStart.Name = "btnBitStart";
             this.btnBitStart.Size = new System.Drawing.Size(130, 23);
             this.btnBitStart.TabIndex = 36;
             this.btnBitStart.Text = "Start";
-            this.btnBitStart.Click += new XylosButton.ClickEventHandler(this.btnBitStart_Click);
+            this.btnBitStart.Click += new System.EventHandler(this.btnBitStop_Click);
             // 
             // lblBitTokens
             // 
@@ -2928,29 +2569,22 @@
             // 
             // btnBitLoadTokens
             // 
-            this.btnBitLoadTokens.EnabledCalc = true;
             this.btnBitLoadTokens.Location = new System.Drawing.Point(79, 248);
             this.btnBitLoadTokens.Name = "btnBitLoadTokens";
             this.btnBitLoadTokens.Size = new System.Drawing.Size(130, 23);
             this.btnBitLoadTokens.TabIndex = 34;
             this.btnBitLoadTokens.Text = "Load Tokens";
-            this.btnBitLoadTokens.Click += new XylosButton.ClickEventHandler(this.btnBitLoadTokens_Click);
+            this.btnBitLoadTokens.Click += new System.EventHandler(this.btnBitLoadTokens_Click);
             // 
             // txtBitBots
             // 
-            this.txtBitBots.EnabledCalc = true;
             this.txtBitBots.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBitBots.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtBitBots.Location = new System.Drawing.Point(79, 43);
-            this.txtBitBots.MaxLength = 32767;
-            this.txtBitBots.MultiLine = false;
             this.txtBitBots.Name = "txtBitBots";
-            this.txtBitBots.ReadOnly = false;
-            this.txtBitBots.Size = new System.Drawing.Size(130, 29);
+            this.txtBitBots.Size = new System.Drawing.Size(130, 23);
             this.txtBitBots.TabIndex = 48;
             this.txtBitBots.Text = "5";
-            this.txtBitBots.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBitBots.UseSystemPasswordChar = false;
             // 
             // label35
             // 
@@ -2963,19 +2597,13 @@
             // 
             // txtBitChannel
             // 
-            this.txtBitChannel.EnabledCalc = true;
             this.txtBitChannel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBitChannel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(133)))), ((int)(((byte)(142)))));
             this.txtBitChannel.Location = new System.Drawing.Point(79, 8);
-            this.txtBitChannel.MaxLength = 32767;
-            this.txtBitChannel.MultiLine = false;
             this.txtBitChannel.Name = "txtBitChannel";
-            this.txtBitChannel.ReadOnly = false;
-            this.txtBitChannel.Size = new System.Drawing.Size(130, 29);
+            this.txtBitChannel.Size = new System.Drawing.Size(130, 23);
             this.txtBitChannel.TabIndex = 47;
             this.txtBitChannel.Text = "Username";
-            this.txtBitChannel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBitChannel.UseSystemPasswordChar = false;
             // 
             // label36
             // 
@@ -3030,227 +2658,227 @@
 
         #endregion
 
-        private XylosTabControl tabControl;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private XylosTextBox txtFollowAmount;
+        private System.Windows.Forms.TextBox txtFollowAmount;
         private System.Windows.Forms.Label label2;
-        private XylosButton btnFollowStart;
+        private System.Windows.Forms.Button btnFollowStart;
         private System.Windows.Forms.Label lblFollowFail;
         private System.Windows.Forms.Label lblFollowSent;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label lblTokenCheckerBad;
         private System.Windows.Forms.Label lblTokenCheckerGood;
-        private XylosButton btnTokenCheckerStart;
+        private System.Windows.Forms.Button btnTokenCheckerStart;
         private System.Windows.Forms.Label lblTokenCheckerPrimeAvailable;
         private System.Windows.Forms.Label lblTokenCheckerPrimes;
         private System.Windows.Forms.Label lblTokenCheckerBits;
         private System.Windows.Forms.Label lblMessages;
-        private XylosButton btnLoadMessages;
-        private XylosButton btnChatStart;
+        private System.Windows.Forms.Button btnLoadMessages;
+        private System.Windows.Forms.Button btnChatStart;
         private System.Windows.Forms.Label lblSuccess;
         private System.Windows.Forms.TabPage tabPage6;
-        private XylosButton btnSubStart;
+        private System.Windows.Forms.Button btnSubStart;
         private System.Windows.Forms.Label lblSubFail;
         private System.Windows.Forms.Label lblSubSuccess;
-        private XylosButton btnTokenCheckerStop;
-        private XylosButton btnFollowStop;
-        private XylosButton btnSubStop;
-        private XylosButton btnChatStop;
+        private System.Windows.Forms.Button btnTokenCheckerStop;
+        private System.Windows.Forms.Button btnFollowStop;
+        private System.Windows.Forms.Button btnSubStop;
+        private System.Windows.Forms.Button btnChatStop;
         private System.Windows.Forms.TabPage tabPage1;
-        private XylosCombobox comboCreatorProxyType;
+        private System.Windows.Forms.ComboBox comboCreatorProxyType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblAccountsCreated;
-        private XylosTextBox txtCreator2CaptchaKey;
+        private System.Windows.Forms.TextBox txtCreator2CaptchaKey;
         private System.Windows.Forms.Label label1;
-        private XylosTextBox txtCreatorThreads;
+        private System.Windows.Forms.TextBox txtCreatorThreads;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCreatorProxies;
-        private XylosButton btnCreatorLoadProxies;
-        private XylosTextBox txtCreatorAmount;
+        private System.Windows.Forms.Button btnCreatorLoadProxies;
+        private System.Windows.Forms.TextBox txtCreatorAmount;
         private System.Windows.Forms.Label label4;
-        private XylosButton btnCreatorStop;
-        private XylosButton btnCreatorStart;
+        private System.Windows.Forms.Button btnCreatorStop;
+        private System.Windows.Forms.Button btnCreatorStart;
         private System.Windows.Forms.Label lblTokenCheckerTokens;
-        private XylosButton btnTokenCheckerLoadTokens;
-        private XylosTextBox txtTokenCheckerThreads;
+        private System.Windows.Forms.Button btnTokenCheckerLoadTokens;
+        private System.Windows.Forms.TextBox txtTokenCheckerThreads;
         private System.Windows.Forms.Label label6;
-        private XylosTextBox txtFollowThreads;
+        private System.Windows.Forms.TextBox txtFollowThreads;
         private System.Windows.Forms.Label label9;
-        private XylosTextBox txtFollowChannel;
+        private System.Windows.Forms.TextBox txtFollowChannel;
         private System.Windows.Forms.Label label8;
-        private XylosButton btnFollowLoadTokens;
+        private System.Windows.Forms.Button btnFollowLoadTokens;
         private System.Windows.Forms.Label lblFollowTokens;
-        private XylosTextBox txtSubBots;
+        private System.Windows.Forms.TextBox txtSubBots;
         private System.Windows.Forms.Label label10;
-        private XylosTextBox txtSubChannel;
+        private System.Windows.Forms.TextBox txtSubChannel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblSubTokens;
-        private XylosButton btnSubLoadTokens;
+        private System.Windows.Forms.Button btnSubLoadTokens;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblChatTokens;
-        private XylosButton btnChatLoadTokens;
-        private XylosTextBox txtChatBots;
+        private System.Windows.Forms.Button btnChatLoadTokens;
+        private System.Windows.Forms.TextBox txtChatBots;
         private System.Windows.Forms.Label label13;
-        private XylosTextBox txtChatChannel;
+        private System.Windows.Forms.TextBox txtChatChannel;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
-        private XylosTextBox txtFollowDelay;
+        private System.Windows.Forms.TextBox txtFollowDelay;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label18;
-        private XylosTextBox txtChatDelay;
+        private System.Windows.Forms.TextBox txtChatDelay;
         private System.Windows.Forms.Label label19;
-        private XylosTextBox txtSubDelay;
+        private System.Windows.Forms.TextBox txtSubDelay;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage5;
-        private XylosButton btnScraperSave;
+        private System.Windows.Forms.Button btnScraperSave;
         private System.Windows.Forms.Label lblProxiesFetched;
-        private XylosButton btnScraperFetch;
+        private System.Windows.Forms.Button btnScraperFetch;
         private System.Windows.Forms.Label label25;
-        private XylosCombobox comboScraperAnonymity;
+        private System.Windows.Forms.ComboBox comboScraperAnonymity;
         private System.Windows.Forms.Label label24;
-        private XylosCombobox comboScraperCountry;
+        private System.Windows.Forms.ComboBox comboScraperCountry;
         private System.Windows.Forms.Label label23;
-        private XylosCombobox comboScraperType;
+        private System.Windows.Forms.ComboBox comboScraperType;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label26;
-        private XylosTextBox txtScraperTimeout;
+        private System.Windows.Forms.TextBox txtScraperTimeout;
         private System.Windows.Forms.Label lblScraperUpdated;
-        private XylosButton btnScraperCopyToClipboard;
+        private System.Windows.Forms.Button btnScraperCopyToClipboard;
         private System.Windows.Forms.TabPage tabPage8;
-        private XylosButton btnAccountCheckerLoadAccounts;
-        private XylosTextBox txtAccountCheckerThreads;
+        private System.Windows.Forms.Button btnAccountCheckerLoadAccounts;
+        private System.Windows.Forms.TextBox txtAccountCheckerThreads;
         private System.Windows.Forms.Label label21;
-        private XylosButton btnAccountCheckerLoadProxies;
+        private System.Windows.Forms.Button btnAccountCheckerLoadProxies;
         private System.Windows.Forms.Label lblAccountCheckerProxies;
         private System.Windows.Forms.Label lblCheckerAccounts;
-        private XylosButton btnAccountCheckerStop;
-        private XylosButton btnAccountCheckerStart;
+        private System.Windows.Forms.Button btnAccountCheckerStop;
+        private System.Windows.Forms.Button btnAccountCheckerStart;
         private System.Windows.Forms.Label lblAccountCheckerBits;
         private System.Windows.Forms.Label lblAccountCheckerPrimes;
         private System.Windows.Forms.Label lblAccountCheckerPrimeAvailable;
         private System.Windows.Forms.Label lblAccountCheckerInvalid;
         private System.Windows.Forms.Label lblAccountCheckerGood;
-        private XylosCombobox comboCheckerProxyType;
+        private System.Windows.Forms.ComboBox comboCheckerProxyType;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label lblChatProxies;
-        private XylosButton btnChatLoadProxies;
-        private XylosCheckBox chkChatUseProxies;
-        private XylosCombobox comboChatProxyType;
+        private System.Windows.Forms.Button btnChatLoadProxies;
+        private System.Windows.Forms.CheckBox chkChatUseProxies;
+        private System.Windows.Forms.CheckBox comboChatProxyType;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private XylosTextBox txtCheckerTimeout;
+        private System.Windows.Forms.TextBox txtCheckerTimeout;
         private System.Windows.Forms.Label label32;
-        private XylosTextBox txtChatTimeout;
+        private System.Windows.Forms.TextBox txtChatTimeout;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Label lblBitTokens;
-        private XylosButton btnBitLoadTokens;
-        private XylosTextBox txtBitBots;
+        private System.Windows.Forms.Button btnBitLoadTokens;
+        private System.Windows.Forms.TextBox txtBitBots;
         private System.Windows.Forms.Label label35;
-        private XylosTextBox txtBitChannel;
+        private System.Windows.Forms.TextBox txtBitChannel;
         private System.Windows.Forms.Label label36;
-        private XylosButton btnBitStop;
-        private XylosButton btnBitStart;
+        private System.Windows.Forms.Button btnBitStop;
+        private System.Windows.Forms.Button btnBitStart;
         private System.Windows.Forms.Label lblBitFail;
         private System.Windows.Forms.Label lblBitSuccess;
         private System.Windows.Forms.TabPage tabPage10;
-        private XylosCombobox comboViewProxyType;
+        private System.Windows.Forms.CheckBox comboViewProxyType;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label lblViewBotProxies;
-        private XylosButton btnViewLoadProxies;
-        private XylosTextBox txtViewThreads;
+        private System.Windows.Forms.Button btnViewLoadProxies;
+        private System.Windows.Forms.TextBox txtViewThreads;
         private System.Windows.Forms.Label label40;
-        private XylosTextBox txtViewChannel;
+        private System.Windows.Forms.TextBox txtViewChannel;
         private System.Windows.Forms.Label label41;
-        private XylosButton btnViewStop;
-        private XylosButton btnViewStart;
+        private System.Windows.Forms.Button btnViewStop;
+        private System.Windows.Forms.Button btnViewStart;
         public System.Windows.Forms.Label lblViewRequests;
         private System.Windows.Forms.Label lblMessagesFail;
         private System.Windows.Forms.Label label34;
-        private XylosTextBox txtBitDelay;
+        private System.Windows.Forms.TextBox txtBitDelay;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label37;
-        private XylosTextBox txtCreatorTimeout;
+        private System.Windows.Forms.TextBox txtCreatorTimeout;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label42;
-        private XylosTextBox txtViewTimeout;
+        private System.Windows.Forms.TextBox txtViewTimeout;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private XylosTextBox txtSubTimeout;
+        private System.Windows.Forms.TextBox txtSubTimeout;
         private System.Windows.Forms.Label label45;
-        private XylosCheckBox chkSubUseProxies;
-        private XylosCombobox comboSubProxyType;
+        private System.Windows.Forms.CheckBox chkSubUseProxies;
+        private System.Windows.Forms.CheckBox comboSubProxyType;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label lblSubProxies;
-        private XylosButton btnSubLoadProxies;
+        private System.Windows.Forms.Button btnSubLoadProxies;
         private System.Windows.Forms.Label label47;
-        private XylosTextBox txtBitTimeout;
+        private System.Windows.Forms.TextBox txtBitTimeout;
         private System.Windows.Forms.Label label48;
-        private XylosCheckBox chkBitUseProxies;
-        private XylosCombobox comboBitProxyType;
+        private System.Windows.Forms.CheckBox chkBitUseProxies;
+        private System.Windows.Forms.CheckBox comboBitProxyType;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label lblBitProxies;
-        private XylosButton btnBitLoadProxies;
+        private System.Windows.Forms.Button btnBitLoadProxies;
         private System.Windows.Forms.Label label50;
-        private XylosTextBox txtFollowTimeout;
+        private System.Windows.Forms.TextBox txtFollowTimeout;
         private System.Windows.Forms.Label label51;
-        private XylosCheckBox chkFollowUseProxies;
-        private XylosCombobox comboFollowProxyType;
+        private System.Windows.Forms.CheckBox chkFollowUseProxies;
+        private System.Windows.Forms.CheckBox comboFollowProxyType;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label lblFollowProxies;
-        private XylosButton btnFollowLoadProxies;
+        private System.Windows.Forms.Button btnFollowLoadProxies;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label lblLegacyChecked;
         private System.Windows.Forms.Label lblLegacyHits;
-        private XylosButton btnLegacyStop;
-        private XylosButton btnLegacyStart;
+        private System.Windows.Forms.Button btnLegacyStop;
+        private System.Windows.Forms.Button btnLegacyStart;
         private System.Windows.Forms.Label lblLegacyAccounts;
-        private XylosButton btnLegacyLoadAccounts;
-        private XylosTextBox txtLegacyThreads;
+        private System.Windows.Forms.Button btnLegacyLoadAccounts;
+        private System.Windows.Forms.TextBox txtLegacyThreads;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label lblAccountCheckerChecked;
         private System.Windows.Forms.Label lblTokenCheckerChecked;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.Label label61;
         public System.Windows.Forms.Label lblChannelFailedRequests;
-        private XylosTextBox txtChannelTimeout;
+        private System.Windows.Forms.TextBox txtChannelTimeout;
         private System.Windows.Forms.Label label53;
         public System.Windows.Forms.Label lblChannelRequests;
-        private XylosButton btnChannelStop;
-        private XylosButton btnChannelStart;
-        private XylosCombobox comboChannelType;
+        private System.Windows.Forms.Button btnChannelStop;
+        private System.Windows.Forms.Button btnChannelStart;
+        private System.Windows.Forms.CheckBox comboChannelType;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label lblChannelProxies;
-        private XylosButton btnChannelLoadProxies;
-        private XylosTextBox txtChannelThreads;
+        private System.Windows.Forms.Button btnChannelLoadProxies;
+        private System.Windows.Forms.TextBox txtChannelThreads;
         private System.Windows.Forms.Label label57;
-        private XylosTextBox txtChannel;
+        private System.Windows.Forms.TextBox txtChannel;
         private System.Windows.Forms.Label label58;
-        private XylosCombobox comboScraperSSL;
+        private System.Windows.Forms.ComboBox comboScraperSSL;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label lblAccountCheckerRetries;
         public System.Windows.Forms.Label lblViewRequestsFailed;
         private System.Windows.Forms.Label lblCreatorRetries;
-        private XylosRadioButton radioUnfollow;
-        private XylosRadioButton radioFollow;
+        private System.Windows.Forms.RadioButton radioUnfollow;
+        private System.Windows.Forms.RadioButton radioFollow;
         private System.Windows.Forms.Label lblFollowRemoved;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Label label67;
         public System.Windows.Forms.Label lblVODRequestsFailed;
-        private XylosTextBox txtVODTimeout;
+        private System.Windows.Forms.TextBox txtVODTimeout;
         private System.Windows.Forms.Label label60;
         public System.Windows.Forms.Label lblVODRequests;
-        private XylosButton btnVODStop;
-        private XylosButton btnVODStart;
-        private XylosCombobox comboVODType;
+        private System.Windows.Forms.Button btnVODStop;
+        private System.Windows.Forms.Button btnVODStart;
+        private System.Windows.Forms.CheckBox comboVODType;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label lblVODProxies;
-        private XylosButton btnVODLoadProxies;
-        private XylosTextBox txtVODThreads;
+        private System.Windows.Forms.Button btnVODLoadProxies;
+        private System.Windows.Forms.TextBox txtVODThreads;
         private System.Windows.Forms.Label label65;
-        private XylosTextBox txtVODID;
+        private System.Windows.Forms.TextBox txtVODID;
         private System.Windows.Forms.Label label66;
     }
 }

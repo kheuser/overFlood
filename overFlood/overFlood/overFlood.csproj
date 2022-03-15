@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>overFlood</AssemblyName>
+		<OutputPath>bin\</OutputPath>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net48</TargetFramework>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+	<Target Name="Build">
+		<MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
+	</Target>
+	<Target Name="Clean">
+		<Delete Files="$(OutputPath)$(AssemblyName).exe" />
+	</Target>
+	<Target Name="Rebuild" DependsOnTargets="Clean;Build" />
+	<ItemGroup>
+	  <PackageReference Include="Google.Apis.Core" Version="1.56.0" />
+	  <PackageReference Include="Leaf.xNet" Version="5.1.34" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+</Project>
