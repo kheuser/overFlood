@@ -1,6 +1,8 @@
 ﻿using Leaf.xNet;
+using Leaf.xNet.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -123,6 +125,17 @@ namespace overFlood
             InitializeComponent();
         }
 
+        private void tabControl_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            var g = e.Graphics;
+            var text = this.tabControl.TabPages[e.Index].Text;
+            var sizeText = g.MeasureString(text, this.tabControl.Font);
+
+            var x = e.Bounds.Left + 3;
+            var y = e.Bounds.Top + (e.Bounds.Height - sizeText.Height) / 2;
+            g.DrawString(text, this.tabControl.Font, Brushes.Black, x, y);
+        }
+
         #region Proxy Scraper Methods
         private void btnScraperFetch_Click(object sender, EventArgs e)
         {
@@ -182,11 +195,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //accountCreatorProxies = Utilities.LoadFile(fileName);
-                //lblCreatorProxies.Text = $"Proxies: {accountCreatorProxies.Count()}";
-                //MessageBox.Show($"Loaded {accountCreatorProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                accountCreatorProxies = Utilities.LoadFile(fileName);
+                lblCreatorProxies.Text = $"Proxies: {accountCreatorProxies.Count()}";
+                MessageBox.Show($"Loaded {accountCreatorProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -567,30 +580,11 @@ namespace overFlood
         {
             try
             {
-                string fileContent = string.Empty;
-                string fileName = string.Empty;
-                using (OpenFileDialog openFileDialog = new OpenFileDialog())
-                {
-                    openFileDialog.InitialDirectory = Application.StartupPath;
-                    openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                    openFileDialog.FilterIndex = 2;
-                    openFileDialog.RestoreDirectory = true;
-                    if (openFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        fileName = openFileDialog.FileName;
-                        var fileStream = openFileDialog.OpenFile();
-                        using (StreamReader sr = new StreamReader(fileStream))
-                        {
-                            fileContent = sr.ReadToEnd();
-                        }
-                    }
-                }
-                MessageBox.Show($"Loaded proxies", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //accountCheckerProxies = Utilities.LoadFile(fileName);
-                //lblAccountCheckerProxies.Text = $"Proxies: {accountCheckerProxies.Count()}";
-                //MessageBox.Show($"Loaded {accountCheckerProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                accountCheckerProxies = Utilities.LoadFile(fileName);
+                lblAccountCheckerProxies.Text = $"Proxies: {accountCheckerProxies.Count()}";
+                MessageBox.Show($"Loaded {accountCheckerProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -602,11 +596,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Accounts");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //accountCheckerAccounts = Utilities.LoadAccounts(fileName);
-                //lblCheckerAccounts.Text = $"Valid accounts: {accountCheckerAccounts.Count()}";
-                //MessageBox.Show($"Loaded {accountCheckerAccounts.Count()} valid accounts.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Accounts");
+                if (string.IsNullOrEmpty(fileName)) return;
+                accountCheckerAccounts = Utilities.LoadAccounts(fileName);
+                lblCheckerAccounts.Text = $"Valid accounts: {accountCheckerAccounts.Count()}";
+                MessageBox.Show($"Loaded {accountCheckerAccounts.Count()} valid accounts.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1167,11 +1161,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //viewProxies = Utilities.LoadFile(fileName);
-                //lblViewBotProxies.Text = $"Proxies: {viewProxies.Count()}";
-                //MessageBox.Show($"Loaded {viewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                viewProxies = Utilities.LoadFile(fileName);
+                lblViewBotProxies.Text = $"Proxies: {viewProxies.Count()}";
+                MessageBox.Show($"Loaded {viewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1247,57 +1241,57 @@ namespace overFlood
                     httpRequest.AddHeader("X-Requested-With", "XMLHttpRequest");
                     httpRequest.AddHeader("Client-ID", "jzkbprff40iqj646a697cyrvl0zt2m6");
                     string self = httpRequest.Get("https://api.twitch.tv/api/channels/" + txtViewChannel.Text + "/access_token?oauth_token=undefined&need_https=true&platform=web&player_type=site&player_backend=mediaplayer", null).ToString();
-                    //string text = self.Substring("token\":\"", "\",\"sig", 0, StringComparison.Ordinal, null).Replace("\\", "").Replace("u0026", "\\u0026").Replace("+", "%2B").Replace(":", "%3A").Replace(",", "%2C").Replace("[", "%5B").Replace("]", "%5D").Replace("'", "%27");
-                    //string text2 = self.Substring("sig\":\"", "\",\"mobile", 0, StringComparison.Ordinal, null);
-                    string text = "TEXT1";
-                    string text2 = "TEXT2";
-                    //while (!viewTokenSource.IsCancellationRequested)
-                    //{
-                    //    httpRequest.AddHeader(HttpHeader.Accept, "application/x-mpegURL, application/vnd.apple.mpegurl, application/json, text/plain");
-                    //    httpRequest.AddHeader("Sec-Fetch-Mode", "cors");
-                    //    string address = "https://" + httpRequest.Get(string.Concat(new string[]
-                    //    {
-                    //        "https://usher.ttvnw.net/api/channel/hls/",
-                    //        txtViewChannel.Text,
-                    //        ".m3u8?sig=",
-                    //        text2,
-                    //        "&token=",
-                    //        text
-                    //    }), null).ToString().Substring("https://", ".m3u8", 0, StringComparison.Ordinal, null) + ".m3u8";
-                    //
-                    //    ProxyType proxyType;
+                    string text = self.Substring("token\":\"", "\",\"sig", 0, StringComparison.Ordinal, null).Replace("\\", "").Replace("u0026", "\\u0026").Replace("+", "%2B").Replace(":", "%3A").Replace(",", "%2C").Replace("[", "%5B").Replace("]", "%5D").Replace("'", "%27");
+                    string text2 = self.Substring("sig\":\"", "\",\"mobile", 0, StringComparison.Ordinal, null);
+                    //string text = "TEXT1";
+                    //string text2 = "TEXT2";
+                    while (!viewTokenSource.IsCancellationRequested)
+                    {
+                        httpRequest.AddHeader(HttpHeader.Accept, "application/x-mpegURL, application/vnd.apple.mpegurl, application/json, text/plain");
+                        httpRequest.AddHeader("Sec-Fetch-Mode", "cors");
+                        string address = "https://" + httpRequest.Get(string.Concat(new string[]
+                        {
+                            "https://usher.ttvnw.net/api/channel/hls/",
+                            txtViewChannel.Text,
+                            ".m3u8?sig=",
+                            text2,
+                            "&token=",
+                            text
+                        }), null).ToString().Substring("https://", ".m3u8", 0, StringComparison.Ordinal, null) + ".m3u8";
+                    
+                        ProxyType proxyType;
 
-                    //    switch (comboViewProxyType.Text)
-                    //    {
-                    //        case "HTTP":
-                    //            proxyType = ProxyType.HTTP;
-                    //            break;
-                    //        case "SOCKS4":
-                    //            proxyType = ProxyType.Socks4;
-                    //            break;
-                    //        case "SOCKS4a":
-                    //            proxyType = ProxyType.Socks4A;
-                    //            break;
-                    //        case "SOCKS5":
-                    //            proxyType = ProxyType.Socks5;
-                    //            break;
-                    //        default:
-                    //            proxyType = ProxyType.HTTP;
-                    //            break;
-                    //    }
+                        switch (comboViewProxyType.Text)
+                        {
+                            case "HTTP":
+                                proxyType = ProxyType.HTTP;
+                                break;
+                            case "SOCKS4":
+                                proxyType = ProxyType.Socks4;
+                                break;
+                            case "SOCKS4a":
+                                proxyType = ProxyType.Socks4A;
+                                break;
+                            case "SOCKS5":
+                                proxyType = ProxyType.Socks5;
+                                break;
+                            default:
+                                proxyType = ProxyType.HTTP;
+                                break;
+                        }
 
-                    //    httpRequest.Proxy = ProxyClient.Parse(proxyType, viewProxies[new Random().Next(viewProxies.Count())]);
-                    //    httpRequest.ConnectTimeout = Convert.ToInt32(txtViewTimeout.Text);
-                    //    httpRequest.ReadWriteTimeout = Convert.ToInt32(txtViewTimeout.Text);
-                    //    httpRequest.AddHeader(HttpHeader.Accept,
-                    //        "application/x-mpegURL, application/vnd.apple.mpegurl, application/json, text/plain");
-                    //    httpRequest.AddHeader("Sec-Fetch-Mode", "cors");
-                    //    httpRequest.EnableEncodingContent = false;
-                    //    httpRequest.Raw(HttpMethod.HEAD, address, null);
-                    //    Interlocked.Increment(ref viewRequests);
-                    //    lblViewRequests.Text = $"Requests Sent: {viewRequests}";
-                    //    Thread.Sleep(5);
-                   // }
+                        httpRequest.Proxy = ProxyClient.Parse(proxyType, viewProxies[new Random().Next(viewProxies.Count())]);
+                        httpRequest.ConnectTimeout = Convert.ToInt32(txtViewTimeout.Text);
+                        httpRequest.ReadWriteTimeout = Convert.ToInt32(txtViewTimeout.Text);
+                        httpRequest.AddHeader(HttpHeader.Accept,
+                            "application/x-mpegURL, application/vnd.apple.mpegurl, application/json, text/plain");
+                        httpRequest.AddHeader("Sec-Fetch-Mode", "cors");
+                        httpRequest.EnableEncodingContent = false;
+                        httpRequest.Raw(HttpMethod.HEAD, address, null);
+                        Interlocked.Increment(ref viewRequests);
+                        lblViewRequests.Text = $"Requests Sent: {viewRequests}";
+                        Thread.Sleep(5);
+                    }
                 }
                 catch (Exception)
                 {
@@ -1318,11 +1312,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //channelViewProxies = Utilities.LoadFile(fileName);
-                //lblChannelProxies.Text = $"Proxies: {channelViewProxies.Count()}";
-                //MessageBox.Show($"Loaded {channelViewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                channelViewProxies = Utilities.LoadFile(fileName);
+                lblChannelProxies.Text = $"Proxies: {channelViewProxies.Count()}";
+                MessageBox.Show($"Loaded {channelViewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1455,11 +1449,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //vodViewProxies = Utilities.LoadFile(fileName);
-                //lblVODProxies.Text = $"Proxies: {vodViewProxies.Count()}";
-                //MessageBox.Show($"Loaded {vodViewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                vodViewProxies = Utilities.LoadFile(fileName);
+                lblVODProxies.Text = $"Proxies: {vodViewProxies.Count()}";
+                MessageBox.Show($"Loaded {vodViewProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1592,11 +1586,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //followProxies = Utilities.LoadFile(fileName);
-                //lblFollowProxies.Text = $"Proxies: {followProxies.Count()}";
-                //MessageBox.Show($"Loaded {followProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                followProxies = Utilities.LoadFile(fileName);
+                lblFollowProxies.Text = $"Proxies: {followProxies.Count()}";
+                MessageBox.Show($"Loaded {followProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1608,11 +1602,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Tokens");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //followTokens = Utilities.LoadFile(fileName);
-                //lblFollowTokens.Text = $"Tokens: {followTokens.Count()}";
-                //MessageBox.Show($"Loaded {followTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Tokens");
+                if (string.IsNullOrEmpty(fileName)) return;
+                followTokens = Utilities.LoadFile(fileName);
+                lblFollowTokens.Text = $"Tokens: {followTokens.Count()}";
+                MessageBox.Show($"Loaded {followTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1843,11 +1837,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //chatProxies = Utilities.LoadFile(fileName);
-                //lblChatProxies.Text = $"Proxies: {chatProxies.Count()}";
-                //MessageBox.Show($"Loaded {chatProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                chatProxies = Utilities.LoadFile(fileName);
+                lblChatProxies.Text = $"Proxies: {chatProxies.Count()}";
+                MessageBox.Show($"Loaded {chatProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1859,11 +1853,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Tokens");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //chatTokens = Utilities.LoadFile(fileName);
-                //lblChatTokens.Text = $"Tokens: {chatTokens.Count()}";
-                //MessageBox.Show($"Loaded {chatTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Tokens");
+                if (string.IsNullOrEmpty(fileName)) return;
+                chatTokens = Utilities.LoadFile(fileName);
+                lblChatTokens.Text = $"Tokens: {chatTokens.Count()}";
+                MessageBox.Show($"Loaded {chatTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -1873,11 +1867,11 @@ namespace overFlood
 
         private void btnLoadMessages_Click(object sender, EventArgs e)
         {
-            //string fileName = Utilities.OpenFileDialog("Load Messages");
-            //if (string.IsNullOrEmpty(fileName)) return;
-            //messages = Utilities.LoadFile(fileName);
-            //lblMessages.Text = $"Messages: {messages.Count()}";
-            //MessageBox.Show($"Loaded {messages.Count()} messages.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string fileName = Utilities.OpenFileDialog("Load Messages");
+            if (string.IsNullOrEmpty(fileName)) return;
+            messages = Utilities.LoadFile(fileName);
+            lblMessages.Text = $"Messages: {messages.Count()}";
+            MessageBox.Show($"Loaded {messages.Count()} messages.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private async void btnChatStart_Click(object sender, EventArgs e)
@@ -2088,11 +2082,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //subProxies = Utilities.LoadFile(fileName);
-                //lblSubProxies.Text = $"Proxies: {subProxies.Count()}";
-                //MessageBox.Show($"Loaded {subProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                subProxies = Utilities.LoadFile(fileName);
+                lblSubProxies.Text = $"Proxies: {subProxies.Count()}";
+                MessageBox.Show($"Loaded {subProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -2104,11 +2098,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Tokens");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //subTokens = Utilities.LoadFile(fileName);
-                //lblSubTokens.Text = $"Tokens: {subTokens.Count()}";
-                //MessageBox.Show($"Loaded {subTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Tokens");
+                if (string.IsNullOrEmpty(fileName)) return;
+                subTokens = Utilities.LoadFile(fileName);
+                lblSubTokens.Text = $"Tokens: {subTokens.Count()}";
+                MessageBox.Show($"Loaded {subTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -2322,11 +2316,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Proxies");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //bitProxies = Utilities.LoadFile(fileName);
-                //lblBitProxies.Text = $"Proxies: {bitProxies.Count()}";
-                //MessageBox.Show($"Loaded {bitProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Proxies");
+                if (string.IsNullOrEmpty(fileName)) return;
+                bitProxies = Utilities.LoadFile(fileName);
+                lblBitProxies.Text = $"Proxies: {bitProxies.Count()}";
+                MessageBox.Show($"Loaded {bitProxies.Count()} proxies.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -2338,11 +2332,11 @@ namespace overFlood
         {
             try
             {
-                //string fileName = Utilities.OpenFileDialog("Load Tokens");
-                //if (string.IsNullOrEmpty(fileName)) return;
-                //bitTokens = Utilities.LoadFile(fileName);
-                //lblBitTokens.Text = $"Tokens: {bitTokens.Count()}";
-                //MessageBox.Show($"Loaded {bitTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string fileName = Utilities.OpenFileDialog("Load Tokens");
+                if (string.IsNullOrEmpty(fileName)) return;
+                bitTokens = Utilities.LoadFile(fileName);
+                lblBitTokens.Text = $"Tokens: {bitTokens.Count()}";
+                MessageBox.Show($"Loaded {bitTokens.Count()} tokens.", "overFlood", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

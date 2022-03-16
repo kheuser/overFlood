@@ -116,7 +116,7 @@
             this.lblViewRequests = new System.Windows.Forms.Label();
             this.btnViewStop = new System.Windows.Forms.Button();
             this.btnViewStart = new System.Windows.Forms.Button();
-            this.comboViewProxyType = new System.Windows.Forms.CheckBox();
+            this.comboViewProxyType = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
             this.lblViewBotProxies = new System.Windows.Forms.Label();
             this.btnViewLoadProxies = new System.Windows.Forms.Button();
@@ -132,7 +132,7 @@
             this.lblChannelRequests = new System.Windows.Forms.Label();
             this.btnChannelStop = new System.Windows.Forms.Button();
             this.btnChannelStart = new System.Windows.Forms.Button();
-            this.comboChannelType = new System.Windows.Forms.CheckBox();
+            this.comboChannelType = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.lblChannelProxies = new System.Windows.Forms.Label();
             this.btnChannelLoadProxies = new System.Windows.Forms.Button();
@@ -148,7 +148,7 @@
             this.lblVODRequests = new System.Windows.Forms.Label();
             this.btnVODStop = new System.Windows.Forms.Button();
             this.btnVODStart = new System.Windows.Forms.Button();
-            this.comboVODType = new System.Windows.Forms.CheckBox();
+            this.comboVODType = new System.Windows.Forms.ComboBox();
             this.label63 = new System.Windows.Forms.Label();
             this.lblVODProxies = new System.Windows.Forms.Label();
             this.btnVODLoadProxies = new System.Windows.Forms.Button();
@@ -164,7 +164,7 @@
             this.txtFollowTimeout = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.chkFollowUseProxies = new System.Windows.Forms.CheckBox();
-            this.comboFollowProxyType = new System.Windows.Forms.CheckBox();
+            this.comboFollowProxyType = new System.Windows.Forms.ComboBox();
             this.label52 = new System.Windows.Forms.Label();
             this.lblFollowProxies = new System.Windows.Forms.Label();
             this.btnFollowLoadProxies = new System.Windows.Forms.Button();
@@ -189,7 +189,7 @@
             this.txtChatTimeout = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.chkChatUseProxies = new System.Windows.Forms.CheckBox();
-            this.comboChatProxyType = new System.Windows.Forms.CheckBox();
+            this.comboChatProxyType = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.lblChatProxies = new System.Windows.Forms.Label();
             this.btnChatLoadProxies = new System.Windows.Forms.Button();
@@ -212,7 +212,7 @@
             this.txtSubTimeout = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.chkSubUseProxies = new System.Windows.Forms.CheckBox();
-            this.comboSubProxyType = new System.Windows.Forms.CheckBox();
+            this.comboSubProxyType = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
             this.lblSubProxies = new System.Windows.Forms.Label();
             this.btnSubLoadProxies = new System.Windows.Forms.Button();
@@ -234,7 +234,7 @@
             this.txtBitTimeout = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
             this.chkBitUseProxies = new System.Windows.Forms.CheckBox();
-            this.comboBitProxyType = new System.Windows.Forms.CheckBox();
+            this.comboBitProxyType = new System.Windows.Forms.ComboBox();
             this.label49 = new System.Windows.Forms.Label();
             this.lblBitProxies = new System.Windows.Forms.Label();
             this.btnBitLoadProxies = new System.Windows.Forms.Button();
@@ -283,7 +283,7 @@
             this.tabControl.Controls.Add(this.tabPage9);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl.ItemSize = new System.Drawing.Size(40, 180);
+            this.tabControl.ItemSize = new System.Drawing.Size(30, 120);
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Multiline = true;
             this.tabControl.Name = "tabControl";
@@ -291,6 +291,9 @@
             this.tabControl.Size = new System.Drawing.Size(432, 500);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
+            this.tabControl.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl_DrawItem);
+
             // 
             // tabPage5
             // 
@@ -1251,6 +1254,11 @@
             // 
             this.comboViewProxyType.Location = new System.Drawing.Point(79, 78);
             this.comboViewProxyType.Name = "comboViewProxyType";
+            this.comboViewProxyType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboViewProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboViewProxyType.TabIndex = 18;
             // 
@@ -1415,6 +1423,11 @@
             this.comboChannelType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboChannelType.Location = new System.Drawing.Point(79, 78);
             this.comboChannelType.Name = "comboChannelType";
+            this.comboChannelType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboChannelType.Size = new System.Drawing.Size(130, 26);
             this.comboChannelType.TabIndex = 22;
             // 
@@ -1578,6 +1591,11 @@
             // 
             this.comboVODType.Location = new System.Drawing.Point(79, 78);
             this.comboVODType.Name = "comboVODType";
+            this.comboVODType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboVODType.Size = new System.Drawing.Size(130, 26);
             this.comboVODType.TabIndex = 26;
             // 
@@ -1753,6 +1771,11 @@
             // 
             this.comboFollowProxyType.Location = new System.Drawing.Point(79, 220);
             this.comboFollowProxyType.Name = "comboFollowProxyType";
+            this.comboFollowProxyType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboFollowProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboFollowProxyType.TabIndex = 33;
             // 
@@ -2006,6 +2029,11 @@
             // 
             this.comboChatProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboChatProxyType.Name = "comboChatProxyType";
+            this.comboChatProxyType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboChatProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboChatProxyType.TabIndex = 39;
             // 
@@ -2239,6 +2267,11 @@
             // 
             this.comboSubProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboSubProxyType.Name = "comboSubProxyType";
+            this.comboSubProxyType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboSubProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboSubProxyType.TabIndex = 45;
             // 
@@ -2464,6 +2497,11 @@
             this.comboBitProxyType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBitProxyType.Location = new System.Drawing.Point(79, 137);
             this.comboBitProxyType.Name = "comboBitProxyType";
+            this.comboBitProxyType.Items.AddRange(new object[] {
+            "HTTP",
+            "SOCKS4",
+            "SOCKS4a",
+            "SOCKS5"});
             this.comboBitProxyType.Size = new System.Drawing.Size(130, 26);
             this.comboBitProxyType.TabIndex = 51;
             // 
@@ -2765,7 +2803,7 @@
         private System.Windows.Forms.Label lblChatProxies;
         private System.Windows.Forms.Button btnChatLoadProxies;
         private System.Windows.Forms.CheckBox chkChatUseProxies;
-        private System.Windows.Forms.CheckBox comboChatProxyType;
+        private System.Windows.Forms.ComboBox comboChatProxyType;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox txtCheckerTimeout;
@@ -2784,7 +2822,7 @@
         private System.Windows.Forms.Label lblBitFail;
         private System.Windows.Forms.Label lblBitSuccess;
         private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.CheckBox comboViewProxyType;
+        private System.Windows.Forms.ComboBox comboViewProxyType;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label lblViewBotProxies;
         private System.Windows.Forms.Button btnViewLoadProxies;
@@ -2809,7 +2847,7 @@
         private System.Windows.Forms.TextBox txtSubTimeout;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.CheckBox chkSubUseProxies;
-        private System.Windows.Forms.CheckBox comboSubProxyType;
+        private System.Windows.Forms.ComboBox comboSubProxyType;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label lblSubProxies;
         private System.Windows.Forms.Button btnSubLoadProxies;
@@ -2817,7 +2855,7 @@
         private System.Windows.Forms.TextBox txtBitTimeout;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.CheckBox chkBitUseProxies;
-        private System.Windows.Forms.CheckBox comboBitProxyType;
+        private System.Windows.Forms.ComboBox comboBitProxyType;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label lblBitProxies;
         private System.Windows.Forms.Button btnBitLoadProxies;
@@ -2825,7 +2863,7 @@
         private System.Windows.Forms.TextBox txtFollowTimeout;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.CheckBox chkFollowUseProxies;
-        private System.Windows.Forms.CheckBox comboFollowProxyType;
+        private System.Windows.Forms.ComboBox comboFollowProxyType;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label lblFollowProxies;
         private System.Windows.Forms.Button btnFollowLoadProxies;
@@ -2848,7 +2886,7 @@
         public System.Windows.Forms.Label lblChannelRequests;
         private System.Windows.Forms.Button btnChannelStop;
         private System.Windows.Forms.Button btnChannelStart;
-        private System.Windows.Forms.CheckBox comboChannelType;
+        private System.Windows.Forms.ComboBox comboChannelType;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label lblChannelProxies;
         private System.Windows.Forms.Button btnChannelLoadProxies;
@@ -2872,7 +2910,7 @@
         public System.Windows.Forms.Label lblVODRequests;
         private System.Windows.Forms.Button btnVODStop;
         private System.Windows.Forms.Button btnVODStart;
-        private System.Windows.Forms.CheckBox comboVODType;
+        private System.Windows.Forms.ComboBox comboVODType;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label lblVODProxies;
         private System.Windows.Forms.Button btnVODLoadProxies;
